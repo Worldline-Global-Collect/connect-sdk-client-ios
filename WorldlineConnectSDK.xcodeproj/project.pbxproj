@@ -1,0 +1,1905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BE7C7262953499F00657F2F /* KeychainEntitlementTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7C7252953499F00657F2F /* KeychainEntitlementTestAppApp.swift */; };
+		B4D77C6B1DE72EB900F7B1C1 /* WorldlineConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D77C611DE72EB900F7B1C1 /* WorldlineConnectSDK.framework */; };
+		B4D77C721DE72EB900F7B1C1 /* WorldlineConnectSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D77C641DE72EB900F7B1C1 /* WorldlineConnectSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4D77DC91DE72F4E00F7B1C1 /* WCSession.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D77DBF1DE72F4E00F7B1C1 /* WCSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4D77DCA1DE72F4E00F7B1C1 /* WCSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D77DC01DE72F4E00F7B1C1 /* WCSession.m */; };
+		BFAD7DA72BA3491D00A48165 /* certificate.pfx in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA12BA3491D00A48165 /* certificate.pfx */; };
+		BFAD7DA82BA3491D00A48165 /* paymentProduct.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA22BA3491D00A48165 /* paymentProduct.json */; };
+		BFAD7DA92BA3491D00A48165 /* paymentProductGroups.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA32BA3491D00A48165 /* paymentProductGroups.json */; };
+		BFAD7DAA2BA3491D00A48165 /* paymentProductGroup.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA42BA3491D00A48165 /* paymentProductGroup.json */; };
+		BFAD7DAB2BA3491D00A48165 /* paymentProductMissingFields.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA52BA3491D00A48165 /* paymentProductMissingFields.json */; };
+		BFAD7DAC2BA3491D00A48165 /* paymentProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA62BA3491D00A48165 /* paymentProducts.json */; };
+		BFE912252BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912212BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912262BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912222BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.m */; };
+		BFE912272BA2F3FF00590193 /* WCC2SCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912232BA2F3FF00590193 /* WCC2SCommunicator.m */; };
+		BFE912282BA2F3FF00590193 /* WCC2SCommunicator.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912242BA2F3FF00590193 /* WCC2SCommunicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9122B2BA2F41700590193 /* WCBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912292BA2F41700590193 /* WCBase64.m */; };
+		BFE9122C2BA2F41700590193 /* WCBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9122A2BA2F41700590193 /* WCBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9122E2BA2F45100590193 /* WCSDKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9122D2BA2F45100590193 /* WCSDKConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9124B2BA2F4ED00590193 /* WCPaymentProductGroupsConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9122F2BA2F4EC00590193 /* WCPaymentProductGroupsConverter.m */; };
+		BFE9124C2BA2F4ED00590193 /* WCBasicPaymentProductConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912302BA2F4EC00590193 /* WCBasicPaymentProductConverter.m */; };
+		BFE9124D2BA2F4ED00590193 /* WCBasicPaymentProductGroupConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912312BA2F4EC00590193 /* WCBasicPaymentProductGroupConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9124E2BA2F4ED00590193 /* WCThirdPartyStatusResponseConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912322BA2F4EC00590193 /* WCThirdPartyStatusResponseConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9124F2BA2F4ED00590193 /* WCBasicPaymentProductsConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912332BA2F4EC00590193 /* WCBasicPaymentProductsConverter.m */; };
+		BFE912502BA2F4ED00590193 /* WCPaymentContextConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912342BA2F4EC00590193 /* WCPaymentContextConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912512BA2F4ED00590193 /* WCPaymentProductGroupsConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912352BA2F4EC00590193 /* WCPaymentProductGroupsConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912522BA2F4ED00590193 /* WCBasicPaymentProductGroupConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912362BA2F4EC00590193 /* WCBasicPaymentProductGroupConverter.m */; };
+		BFE912532BA2F4ED00590193 /* WCBasicPaymentItemConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912372BA2F4EC00590193 /* WCBasicPaymentItemConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912542BA2F4ED00590193 /* WCDirectoryEntriesConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912382BA2F4EC00590193 /* WCDirectoryEntriesConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912552BA2F4ED00590193 /* WCPaymentProductConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912392BA2F4EC00590193 /* WCPaymentProductConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912562BA2F4ED00590193 /* WCDirectoryEntryConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9123A2BA2F4EC00590193 /* WCDirectoryEntryConverter.m */; };
+		BFE912572BA2F4ED00590193 /* WCPaymentItemConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9123B2BA2F4EC00590193 /* WCPaymentItemConverter.m */; };
+		BFE912582BA2F4ED00590193 /* WCPaymentProductGroupConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9123C2BA2F4EC00590193 /* WCPaymentProductGroupConverter.m */; };
+		BFE912592BA2F4ED00590193 /* WCDisplayElementsConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9123D2BA2F4EC00590193 /* WCDisplayElementsConverter.m */; };
+		BFE9125A2BA2F4ED00590193 /* WCDirectoryEntryConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9123E2BA2F4EC00590193 /* WCDirectoryEntryConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9125B2BA2F4ED00590193 /* WCIINDetailsResponseConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9123F2BA2F4EC00590193 /* WCIINDetailsResponseConverter.m */; };
+		BFE9125C2BA2F4ED00590193 /* WCPaymentContextConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912402BA2F4EC00590193 /* WCPaymentContextConverter.m */; };
+		BFE9125D2BA2F4ED00590193 /* WCBasicPaymentItemConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912412BA2F4EC00590193 /* WCBasicPaymentItemConverter.m */; };
+		BFE9125E2BA2F4ED00590193 /* WCBasicPaymentProductConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912422BA2F4EC00590193 /* WCBasicPaymentProductConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9125F2BA2F4ED00590193 /* WCPaymentProductConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912432BA2F4EC00590193 /* WCPaymentProductConverter.m */; };
+		BFE912602BA2F4ED00590193 /* WCPaymentProductGroupConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912442BA2F4EC00590193 /* WCPaymentProductGroupConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912612BA2F4ED00590193 /* WCDisplayElementsConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912452BA2F4EC00590193 /* WCDisplayElementsConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912622BA2F4ED00590193 /* WCThirdPartyStatusResponseConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912462BA2F4EC00590193 /* WCThirdPartyStatusResponseConverter.m */; };
+		BFE912632BA2F4ED00590193 /* WCPaymentItemConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912472BA2F4EC00590193 /* WCPaymentItemConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912642BA2F4ED00590193 /* WCBasicPaymentProductsConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912482BA2F4ED00590193 /* WCBasicPaymentProductsConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912652BA2F4ED00590193 /* WCDirectoryEntriesConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912492BA2F4ED00590193 /* WCDirectoryEntriesConverter.m */; };
+		BFE912662BA2F4ED00590193 /* WCIINDetailsResponseConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9124A2BA2F4ED00590193 /* WCIINDetailsResponseConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9126B2BA2F56D00590193 /* WCEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912672BA2F56D00590193 /* WCEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9126C2BA2F56D00590193 /* WCEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912682BA2F56D00590193 /* WCEncryptor.m */; };
+		BFE9126D2BA2F56D00590193 /* WCJOSEEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912692BA2F56D00590193 /* WCJOSEEncryptor.m */; };
+		BFE9126E2BA2F56D00590193 /* WCJOSEEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9126A2BA2F56D00590193 /* WCJOSEEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912712BA2F59100590193 /* WCStringFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9126F2BA2F59100590193 /* WCStringFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912722BA2F59100590193 /* WCStringFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912702BA2F59100590193 /* WCStringFormatter.m */; };
+		BFE912782BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912732BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.m */; };
+		BFE912792BA2F5C400590193 /* WCNetworkingActivityLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912742BA2F5C400590193 /* WCNetworkingActivityLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9127A2BA2F5C400590193 /* WCNetworkingActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912752BA2F5C400590193 /* WCNetworkingActivityLogger.m */; };
+		BFE9127B2BA2F5C400590193 /* WCNetworkingActivityLoggerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912762BA2F5C400590193 /* WCNetworkingActivityLoggerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9127C2BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912772BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9127F2BA2F5F500590193 /* WCBasicPaymentItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9127D2BA2F5F500590193 /* WCBasicPaymentItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912802BA2F5F500590193 /* WCPaymentItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9127E2BA2F5F500590193 /* WCPaymentItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912882BA2F64800590193 /* WCJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912812BA2F64800590193 /* WCJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912892BA2F64800590193 /* WCUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912822BA2F64800590193 /* WCUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9128A2BA2F64800590193 /* WCJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912832BA2F64800590193 /* WCJSON.m */; };
+		BFE9128B2BA2F64800590193 /* WCAssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912842BA2F64800590193 /* WCAssetManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9128C2BA2F64800590193 /* WCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912852BA2F64800590193 /* WCUtil.m */; };
+		BFE9128D2BA2F64800590193 /* WCMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912862BA2F64800590193 /* WCMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9128E2BA2F64800590193 /* WCAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912872BA2F64800590193 /* WCAssetManager.m */; };
+		BFE912912BA2F66D00590193 /* WCNetworkingWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9128F2BA2F66D00590193 /* WCNetworkingWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912922BA2F66D00590193 /* WCNetworkingWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912902BA2F66D00590193 /* WCNetworkingWrapper.m */; };
+		BFE912982BA2F6C600590193 /* WCAccountOnFileAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912932BA2F6C600590193 /* WCAccountOnFileAttribute.m */; };
+		BFE912992BA2F6C600590193 /* WCAccountOnFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912942BA2F6C600590193 /* WCAccountOnFileAttributes.m */; };
+		BFE9129A2BA2F6C600590193 /* WCAccountOnFileAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912952BA2F6C600590193 /* WCAccountOnFileAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9129B2BA2F6C600590193 /* WCAccountOnFileAttributeStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912962BA2F6C600590193 /* WCAccountOnFileAttributeStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9129C2BA2F6C600590193 /* WCAccountOnFileAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912972BA2F6C600590193 /* WCAccountOnFileAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912A32BA2F6F700590193 /* WCLabelTemplateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9129D2BA2F6F600590193 /* WCLabelTemplateItem.m */; };
+		BFE912A42BA2F6F700590193 /* WCAccountOnFileDisplayHints.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9129E2BA2F6F600590193 /* WCAccountOnFileDisplayHints.m */; };
+		BFE912A52BA2F6F700590193 /* WCLabelTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9129F2BA2F6F700590193 /* WCLabelTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912A62BA2F6F700590193 /* WCLabelTemplateItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912A02BA2F6F700590193 /* WCLabelTemplateItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912A72BA2F6F700590193 /* WCLabelTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912A12BA2F6F700590193 /* WCLabelTemplate.m */; };
+		BFE912A82BA2F6F700590193 /* WCAccountOnFileDisplayHints.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912A22BA2F6F700590193 /* WCAccountOnFileDisplayHints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912AD2BA2F70F00590193 /* WCAccountsOnFile.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912A92BA2F70F00590193 /* WCAccountsOnFile.m */; };
+		BFE912AE2BA2F70F00590193 /* WCAccountOnFile.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912AA2BA2F70F00590193 /* WCAccountOnFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912AF2BA2F70F00590193 /* WCAccountsOnFile.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912AB2BA2F70F00590193 /* WCAccountsOnFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912B02BA2F70F00590193 /* WCAccountOnFile.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912AC2BA2F70F00590193 /* WCAccountOnFile.m */; };
+		BFE912B52BA2F73300590193 /* WCDirectoryEntries.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912B12BA2F73300590193 /* WCDirectoryEntries.m */; };
+		BFE912B62BA2F73300590193 /* WCDirectoryEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912B22BA2F73300590193 /* WCDirectoryEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912B72BA2F73300590193 /* WCDirectoryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912B32BA2F73300590193 /* WCDirectoryEntry.m */; };
+		BFE912B82BA2F73300590193 /* WCDirectoryEntries.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912B42BA2F73300590193 /* WCDirectoryEntries.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912BE2BA2F75900590193 /* WCIINDetailsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912B92BA2F75900590193 /* WCIINDetailsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912BF2BA2F75900590193 /* WCIINDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912BA2BA2F75900590193 /* WCIINDetail.m */; };
+		BFE912C02BA2F75900590193 /* WCIINStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912BB2BA2F75900590193 /* WCIINStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912C12BA2F75900590193 /* WCIINDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912BC2BA2F75900590193 /* WCIINDetail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912C22BA2F75900590193 /* WCIINDetailsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912BD2BA2F75900590193 /* WCIINDetailsResponse.m */; };
+		BFE912C72BA2F77B00590193 /* WCPaymentContext.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912C32BA2F77A00590193 /* WCPaymentContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912C82BA2F77B00590193 /* WCPaymentAmountOfMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912C42BA2F77A00590193 /* WCPaymentAmountOfMoney.m */; };
+		BFE912C92BA2F77B00590193 /* WCPaymentAmountOfMoney.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912C52BA2F77B00590193 /* WCPaymentAmountOfMoney.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912CA2BA2F77B00590193 /* WCPaymentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912C62BA2F77B00590193 /* WCPaymentContext.m */; };
+		BFE912CF2BA2F79600590193 /* WCPaymentItems.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912CB2BA2F79600590193 /* WCPaymentItems.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912D02BA2F79600590193 /* WCPaymentItems.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912CC2BA2F79600590193 /* WCPaymentItems.m */; };
+		BFE912D12BA2F79600590193 /* WCPaymentItemDisplayHints.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912CD2BA2F79600590193 /* WCPaymentItemDisplayHints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912D22BA2F79600590193 /* WCPaymentItemDisplayHints.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912CE2BA2F79600590193 /* WCPaymentItemDisplayHints.m */; };
+		BFE912D92BA2FCA100590193 /* WCPaymentProduct302SpecificData.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912D32BA2FCA100590193 /* WCPaymentProduct302SpecificData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912DA2BA2FCA100590193 /* WCPaymentProduct320SpecificData.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912D42BA2FCA100590193 /* WCPaymentProduct320SpecificData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912DB2BA2FCA100590193 /* WCPaymentProduct320SpecificData.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912D52BA2FCA100590193 /* WCPaymentProduct320SpecificData.m */; };
+		BFE912DC2BA2FCA100590193 /* WCPaymentProduct863SpecificData.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912D62BA2FCA100590193 /* WCPaymentProduct863SpecificData.m */; };
+		BFE912DD2BA2FCA100590193 /* WCPaymentProduct863SpecificData.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912D72BA2FCA100590193 /* WCPaymentProduct863SpecificData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912DE2BA2FCA100590193 /* WCPaymentProduct302SpecificData.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912D82BA2FCA100590193 /* WCPaymentProduct302SpecificData.m */; };
+		BFE912EA2BA2FCE500590193 /* WCToolTip.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912DF2BA2FCE500590193 /* WCToolTip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912EB2BA2FCE500590193 /* WCFormElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912E02BA2FCE500590193 /* WCFormElement.m */; };
+		BFE912EC2BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912E12BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.m */; };
+		BFE912ED2BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912E22BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912EE2BA2FCE500590193 /* WCToolTip.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912E32BA2FCE500590193 /* WCToolTip.m */; };
+		BFE912EF2BA2FCE500590193 /* WCDisplayElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912E42BA2FCE500590193 /* WCDisplayElement.m */; };
+		BFE912F02BA2FCE500590193 /* WCDisplayElement.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912E52BA2FCE500590193 /* WCDisplayElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912F12BA2FCE500590193 /* WCFormElement.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912E62BA2FCE500590193 /* WCFormElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912F22BA2FCE500590193 /* WCPreferredInputType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912E72BA2FCE500590193 /* WCPreferredInputType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912F32BA2FCE500590193 /* WCDisplayElementType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912E82BA2FCE500590193 /* WCDisplayElementType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912F42BA2FCE500590193 /* WCFormElementType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912E92BA2FCE500590193 /* WCFormElementType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912FC2BA2FD1300590193 /* WCType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912F52BA2FD1300590193 /* WCType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912FD2BA2FD1300590193 /* WCPaymentProductFields.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912F62BA2FD1300590193 /* WCPaymentProductFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912FE2BA2FD1300590193 /* WCPaymentProductFields.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912F72BA2FD1300590193 /* WCPaymentProductFields.m */; };
+		BFE912FF2BA2FD1300590193 /* WCPaymentProductField.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912F82BA2FD1300590193 /* WCPaymentProductField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913002BA2FD1300590193 /* WCPaymentProductField.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912F92BA2FD1300590193 /* WCPaymentProductField.m */; };
+		BFE913012BA2FD1300590193 /* WCDataRestrictions.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912FA2BA2FD1300590193 /* WCDataRestrictions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913022BA2FD1300590193 /* WCDataRestrictions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912FB2BA2FD1300590193 /* WCDataRestrictions.m */; };
+		BFE9130B2BA2FD4200590193 /* WCAuthenticationIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913032BA2FD4100590193 /* WCAuthenticationIndicator.m */; };
+		BFE9130C2BA2FD4200590193 /* WCBasicPaymentProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913042BA2FD4100590193 /* WCBasicPaymentProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9130D2BA2FD4200590193 /* WCBasicPaymentProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913052BA2FD4100590193 /* WCBasicPaymentProduct.m */; };
+		BFE9130E2BA2FD4200590193 /* WCBasicPaymentProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913062BA2FD4100590193 /* WCBasicPaymentProducts.m */; };
+		BFE9130F2BA2FD4200590193 /* WCBasicPaymentProducts.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913072BA2FD4100590193 /* WCBasicPaymentProducts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913102BA2FD4200590193 /* WCAuthenticationIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913082BA2FD4100590193 /* WCAuthenticationIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913112BA2FD4200590193 /* WCPaymentProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913092BA2FD4200590193 /* WCPaymentProduct.m */; };
+		BFE913122BA2FD4200590193 /* WCPaymentProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9130A2BA2FD4200590193 /* WCPaymentProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913192BA2FD7100590193 /* WCBasicPaymentProductGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913132BA2FD7100590193 /* WCBasicPaymentProductGroups.m */; };
+		BFE9131A2BA2FD7100590193 /* WCPaymentProductGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913142BA2FD7100590193 /* WCPaymentProductGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9131B2BA2FD7100590193 /* WCPaymentProductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913152BA2FD7100590193 /* WCPaymentProductGroup.m */; };
+		BFE9131C2BA2FD7100590193 /* WCBasicPaymentProductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913162BA2FD7100590193 /* WCBasicPaymentProductGroup.m */; };
+		BFE9131D2BA2FD7100590193 /* WCBasicPaymentProductGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913172BA2FD7100590193 /* WCBasicPaymentProductGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9131E2BA2FD7100590193 /* WCBasicPaymentProductGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913182BA2FD7100590193 /* WCBasicPaymentProductGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913212BA2FD8E00590193 /* WCPaymentProductNetworks.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9131F2BA2FD8E00590193 /* WCPaymentProductNetworks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913222BA2FD8E00590193 /* WCPaymentProductNetworks.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913202BA2FD8E00590193 /* WCPaymentProductNetworks.m */; };
+		BFE913272BA2FDA600590193 /* WCPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913232BA2FDA600590193 /* WCPaymentRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913282BA2FDA600590193 /* WCPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913242BA2FDA600590193 /* WCPaymentRequest.m */; };
+		BFE913292BA2FDA600590193 /* WCPreparedPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913252BA2FDA600590193 /* WCPreparedPaymentRequest.m */; };
+		BFE9132A2BA2FDA600590193 /* WCPreparedPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913262BA2FDA600590193 /* WCPreparedPaymentRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9132D2BA2FDBF00590193 /* WCPrivacyPolicyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9132B2BA2FDBF00590193 /* WCPrivacyPolicyResponse.m */; };
+		BFE9132E2BA2FDBF00590193 /* WCPrivacyPolicyResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9132C2BA2FDBF00590193 /* WCPrivacyPolicyResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913312BA2FDD000590193 /* WCPublicKeyResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9132F2BA2FDD000590193 /* WCPublicKeyResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913322BA2FDD000590193 /* WCPublicKeyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913302BA2FDD000590193 /* WCPublicKeyResponse.m */; };
+		BFE913362BA2FDEC00590193 /* WCThirdPartyStatusResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913332BA2FDEC00590193 /* WCThirdPartyStatusResponse.m */; };
+		BFE913372BA2FDEC00590193 /* WCThirdPartyStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913342BA2FDEC00590193 /* WCThirdPartyStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913382BA2FDEC00590193 /* WCThirdPartyStatusResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913352BA2FDEC00590193 /* WCThirdPartyStatusResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913572BA2FE1C00590193 /* WCValidationErrorRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913392BA2FE1B00590193 /* WCValidationErrorRegularExpression.m */; };
+		BFE913582BA2FE1C00590193 /* WCValidationErrorAllowed.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9133A2BA2FE1B00590193 /* WCValidationErrorAllowed.m */; };
+		BFE913592BA2FE1C00590193 /* WCValidationErrorTermsAndConditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9133B2BA2FE1B00590193 /* WCValidationErrorTermsAndConditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9135A2BA2FE1C00590193 /* WCValidationErrorIsRequired.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9133C2BA2FE1B00590193 /* WCValidationErrorIsRequired.m */; };
+		BFE9135B2BA2FE1C00590193 /* WCValidationErrorNumericString.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9133D2BA2FE1B00590193 /* WCValidationErrorNumericString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9135C2BA2FE1C00590193 /* WCValidationErrorTermsAndConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9133E2BA2FE1B00590193 /* WCValidationErrorTermsAndConditions.m */; };
+		BFE9135D2BA2FE1C00590193 /* WCValidationErrorLength.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9133F2BA2FE1C00590193 /* WCValidationErrorLength.m */; };
+		BFE9135E2BA2FE1C00590193 /* WCResidentIdNumberError.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913402BA2FE1C00590193 /* WCResidentIdNumberError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9135F2BA2FE1C00590193 /* WCValidationError.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913412BA2FE1C00590193 /* WCValidationError.m */; };
+		BFE913602BA2FE1C00590193 /* WCValidationErrorInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913422BA2FE1C00590193 /* WCValidationErrorInteger.m */; };
+		BFE913612BA2FE1C00590193 /* WCValidationErrorIBAN.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913432BA2FE1C00590193 /* WCValidationErrorIBAN.m */; };
+		BFE913622BA2FE1C00590193 /* WCValidationErrorRange.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913442BA2FE1C00590193 /* WCValidationErrorRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913632BA2FE1C00590193 /* WCValidationErrorIBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913452BA2FE1C00590193 /* WCValidationErrorIBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913642BA2FE1C00590193 /* WCValidationErrorLength.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913462BA2FE1C00590193 /* WCValidationErrorLength.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913652BA2FE1C00590193 /* WCValidationErrorExpirationDate.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913472BA2FE1C00590193 /* WCValidationErrorExpirationDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913662BA2FE1C00590193 /* WCValidationErrorExpirationDate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913482BA2FE1C00590193 /* WCValidationErrorExpirationDate.m */; };
+		BFE913672BA2FE1C00590193 /* WCResidentIdNumberError.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913492BA2FE1C00590193 /* WCResidentIdNumberError.m */; };
+		BFE913682BA2FE1C00590193 /* WCValidationErrorLuhn.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9134A2BA2FE1C00590193 /* WCValidationErrorLuhn.m */; };
+		BFE913692BA2FE1C00590193 /* WCValidationErrorFixedList.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9134B2BA2FE1C00590193 /* WCValidationErrorFixedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9136A2BA2FE1C00590193 /* WCValidationError.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9134C2BA2FE1C00590193 /* WCValidationError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9136B2BA2FE1C00590193 /* WCValidationErrorFixedList.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9134D2BA2FE1C00590193 /* WCValidationErrorFixedList.m */; };
+		BFE9136C2BA2FE1C00590193 /* WCValidationErrorEmailAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9134E2BA2FE1C00590193 /* WCValidationErrorEmailAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9136D2BA2FE1C00590193 /* WCValidationErrorEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9134F2BA2FE1C00590193 /* WCValidationErrorEmailAddress.m */; };
+		BFE9136E2BA2FE1C00590193 /* WCValidationErrorRange.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913502BA2FE1C00590193 /* WCValidationErrorRange.m */; };
+		BFE9136F2BA2FE1C00590193 /* WCValidationErrorIsRequired.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913512BA2FE1C00590193 /* WCValidationErrorIsRequired.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913702BA2FE1C00590193 /* WCValidationErrorAllowed.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913522BA2FE1C00590193 /* WCValidationErrorAllowed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913712BA2FE1C00590193 /* WCValidationErrorRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913532BA2FE1C00590193 /* WCValidationErrorRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913722BA2FE1C00590193 /* WCValidationErrorLuhn.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913542BA2FE1C00590193 /* WCValidationErrorLuhn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913732BA2FE1C00590193 /* WCValidationErrorInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913552BA2FE1C00590193 /* WCValidationErrorInteger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913742BA2FE1C00590193 /* WCValidationErrorNumericString.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913562BA2FE1C00590193 /* WCValidationErrorNumericString.m */; };
+		BFE9138F2BA2FE8500590193 /* WCValidatorLuhn.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913752BA2FE8400590193 /* WCValidatorLuhn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913902BA2FE8500590193 /* WCValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913762BA2FE8400590193 /* WCValidator.m */; };
+		BFE913912BA2FE8500590193 /* WCValidatorRange.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913772BA2FE8400590193 /* WCValidatorRange.m */; };
+		BFE913922BA2FE8500590193 /* WCValidatorLength.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913782BA2FE8400590193 /* WCValidatorLength.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913932BA2FE8500590193 /* WCValidatorTermsAndConditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913792BA2FE8400590193 /* WCValidatorTermsAndConditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913942BA2FE8500590193 /* WCValidatorIBAN.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9137A2BA2FE8400590193 /* WCValidatorIBAN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913952BA2FE8500590193 /* WCValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9137B2BA2FE8400590193 /* WCValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913962BA2FE8500590193 /* WCValidatorTermsAndConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9137C2BA2FE8500590193 /* WCValidatorTermsAndConditions.m */; };
+		BFE913972BA2FE8500590193 /* WCValidatorLuhn.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9137D2BA2FE8500590193 /* WCValidatorLuhn.m */; };
+		BFE913982BA2FE8500590193 /* WCValidatorExpirationDate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9137E2BA2FE8500590193 /* WCValidatorExpirationDate.m */; };
+		BFE913992BA2FE8500590193 /* WCValidatorResidentIdNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9137F2BA2FE8500590193 /* WCValidatorResidentIdNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9139A2BA2FE8500590193 /* WCValidatorResidentIdNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913802BA2FE8500590193 /* WCValidatorResidentIdNumber.m */; };
+		BFE9139B2BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913812BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9139C2BA2FE8500590193 /* WCValidatorLength.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913822BA2FE8500590193 /* WCValidatorLength.m */; };
+		BFE9139D2BA2FE8500590193 /* WCValidatorEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913832BA2FE8500590193 /* WCValidatorEmailAddress.m */; };
+		BFE9139E2BA2FE8500590193 /* WCValidatorExpirationDate.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913842BA2FE8500590193 /* WCValidatorExpirationDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE9139F2BA2FE8500590193 /* WCValidatorIBAN.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913852BA2FE8500590193 /* WCValidatorIBAN.m */; };
+		BFE913A02BA2FE8500590193 /* WCValidatorFixedList.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913862BA2FE8500590193 /* WCValidatorFixedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913A12BA2FE8500590193 /* WCValidators.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913872BA2FE8500590193 /* WCValidators.m */; };
+		BFE913A22BA2FE8500590193 /* WCValidatorRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913882BA2FE8500590193 /* WCValidatorRegularExpression.m */; };
+		BFE913A32BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913892BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.m */; };
+		BFE913A42BA2FE8500590193 /* WCValidatorEmailAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9138A2BA2FE8500590193 /* WCValidatorEmailAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913A52BA2FE8500590193 /* WCValidatorRange.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9138B2BA2FE8500590193 /* WCValidatorRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913A62BA2FE8500590193 /* WCValidators.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9138C2BA2FE8500590193 /* WCValidators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913A72BA2FE8500590193 /* WCValidatorFixedList.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9138D2BA2FE8500590193 /* WCValidatorFixedList.m */; };
+		BFE913A82BA2FE8500590193 /* WCValidatorRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE9138E2BA2FE8500590193 /* WCValidatorRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913AB2BA2FEA100590193 /* WCValueMappingItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913A92BA2FEA100590193 /* WCValueMappingItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE913AC2BA2FEA100590193 /* WCValueMappingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913AA2BA2FEA100590193 /* WCValueMappingItem.m */; };
+		BFE914082BA303D200590193 /* WCValidatorFixedListTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913EE2BA3020F00590193 /* WCValidatorFixedListTestCase.m */; };
+		BFE914092BA303D200590193 /* WCValidatorLengthTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913EC2BA3020F00590193 /* WCValidatorLengthTestCase.m */; };
+		BFE9140A2BA303D200590193 /* WCValidatorResidentIdNumberTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913F32BA3020F00590193 /* WCValidatorResidentIdNumberTestCase.m */; };
+		BFE9140B2BA303D200590193 /* WCValidatorRangeTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913EF2BA3020F00590193 /* WCValidatorRangeTestCase.m */; };
+		BFE9140C2BA303D200590193 /* WCValidatorExpirationDateTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913F12BA3020F00590193 /* WCValidatorExpirationDateTestCase.m */; };
+		BFE9140D2BA303D200590193 /* WCValidatorEmailAddressTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913ED2BA3020F00590193 /* WCValidatorEmailAddressTestCase.m */; };
+		BFE9140E2BA303D200590193 /* WCValidatorRegularExpressionTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913F22BA3020F00590193 /* WCValidatorRegularExpressionTestCase.m */; };
+		BFE9140F2BA303D200590193 /* WCValidatorLuhnTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913F02BA3020F00590193 /* WCValidatorLuhnTestCase.m */; };
+		BFE914102BA303F300590193 /* WCPaymentRequestTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913EA2BA301F000590193 /* WCPaymentRequestTestCase.m */; };
+		BFE914112BA303F800590193 /* WCBasicPaymentProductTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913E42BA301DB00590193 /* WCBasicPaymentProductTestCase.m */; };
+		BFE914122BA303F800590193 /* WCPaymentProductTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913E52BA301DB00590193 /* WCPaymentProductTestCase.m */; };
+		BFE914132BA303F800590193 /* WCPaymentProductsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913E62BA301DB00590193 /* WCPaymentProductsTestCase.m */; };
+		BFE914142BA303FC00590193 /* WCPaymentProductFieldsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913E02BA301C400590193 /* WCPaymentProductFieldsTestCase.m */; };
+		BFE914152BA303FC00590193 /* WCPaymentProductFieldTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913E12BA301C400590193 /* WCPaymentProductFieldTestCase.m */; };
+		BFE914162BA3040100590193 /* WCAccountOnFileTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913DC2BA301A400590193 /* WCAccountOnFileTestCase.m */; };
+		BFE914172BA3040100590193 /* WCAccountsOnFileTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913DD2BA301A400590193 /* WCAccountsOnFileTestCase.m */; };
+		BFE914182BA3040500590193 /* WCLabelTemplateTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913DA2BA3019B00590193 /* WCLabelTemplateTestCase.m */; };
+		BFE914192BA3040900590193 /* WCAccountOnFileAttributesTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913D82BA3019400590193 /* WCAccountOnFileAttributesTestCase.m */; };
+		BFE9141A2BA3040F00590193 /* WCC2SCommunicatorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913B62BA3008B00590193 /* WCC2SCommunicatorTestCase.m */; };
+		BFE9141B2BA3040F00590193 /* WCC2SCommunicatorConfigurationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913B72BA3008B00590193 /* WCC2SCommunicatorConfigurationTestCase.m */; };
+		BFE9141C2BA3041300590193 /* WCBase64TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913BA2BA300A500590193 /* WCBase64TestCase.m */; };
+		BFE9141D2BA3041700590193 /* WCBasicPaymentProductConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913BF2BA300D600590193 /* WCBasicPaymentProductConverterTestCase.m */; };
+		BFE9141E2BA3041700590193 /* WCPaymentGroupConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913BD2BA300D600590193 /* WCPaymentGroupConverterTestCase.m */; };
+		BFE9141F2BA3041700590193 /* WCPaymentProductsConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913C12BA300D600590193 /* WCPaymentProductsConverterTestCase.m */; };
+		BFE914202BA3041700590193 /* WCPaymentGroupsConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913BE2BA300D600590193 /* WCPaymentGroupsConverterTestCase.m */; };
+		BFE914212BA3041700590193 /* WCBasicPaymentGroupConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913BC2BA300D600590193 /* WCBasicPaymentGroupConverterTestCase.m */; };
+		BFE914222BA3041700590193 /* WCPaymentProductConverterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913C02BA300D600590193 /* WCPaymentProductConverterTestCase.m */; };
+		BFE914232BA3041C00590193 /* WCEncryptorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913C92BA300F400590193 /* WCEncryptorTestCase.m */; };
+		BFE914242BA3041C00590193 /* WCJOSEEncryptorTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913C82BA300F400590193 /* WCJOSEEncryptorTestCase.m */; };
+		BFE914252BA3042000590193 /* WCStringFormatterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913CC2BA3010B00590193 /* WCStringFormatterTestCase.m */; };
+		BFE914262BA3042900590193 /* WCNetworkingWrapperTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913D62BA3016300590193 /* WCNetworkingWrapperTestCase.m */; };
+		BFE914272BA3042F00590193 /* WCUtilTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913D32BA3014500590193 /* WCUtilTestCase.m */; };
+		BFE914282BA3042F00590193 /* WCJSONTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913D22BA3014500590193 /* WCJSONTestCase.m */; };
+		BFE9142F2BA3043D00590193 /* WCStubUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE913CF2BA3012200590193 /* WCStubUtil.m */; };
+		BFE914302BA3043D00590193 /* WCStubUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE913CE2BA3012200590193 /* WCStubUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5353A931E1F978C002A323E /* WorldlineConnectSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5353A921E1F978C002A323E /* WorldlineConnectSDK.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BE7C731295349C300657F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D77C581DE72EB900F7B1C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BE7C7222953499F00657F2F;
+			remoteInfo = KeychainEntitlementTestApp;
+		};
+		B4D77C6C1DE72EB900F7B1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D77C581DE72EB900F7B1C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D77C601DE72EB900F7B1C1;
+			remoteInfo = WorldlineConnectSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BE7C7232953499F00657F2F /* KeychainEntitlementTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainEntitlementTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE7C7252953499F00657F2F /* KeychainEntitlementTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainEntitlementTestAppApp.swift; sourceTree = "<group>"; };
+		B4C369C21DE754C100C50450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = WorldlineConnectSDKTests/Info.plist; sourceTree = "<group>"; };
+		B4D77C611DE72EB900F7B1C1 /* WorldlineConnectSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorldlineConnectSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D77C641DE72EB900F7B1C1 /* WorldlineConnectSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldlineConnectSDK.h; sourceTree = "<group>"; };
+		B4D77C651DE72EB900F7B1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D77C6A1DE72EB900F7B1C1 /* WorldlineConnectSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldlineConnectSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D77DBF1DE72F4E00F7B1C1 /* WCSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSession.h; sourceTree = "<group>"; };
+		B4D77DC01DE72F4E00F7B1C1 /* WCSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSession.m; sourceTree = "<group>"; };
+		BFAD7DA12BA3491D00A48165 /* certificate.pfx */ = {isa = PBXFileReference; lastKnownFileType = file; name = certificate.pfx; path = WorldlineConnectSDKTests/Resources/certificate.pfx; sourceTree = "<group>"; };
+		BFAD7DA22BA3491D00A48165 /* paymentProduct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = paymentProduct.json; path = WorldlineConnectSDKTests/Resources/paymentProduct.json; sourceTree = "<group>"; };
+		BFAD7DA32BA3491D00A48165 /* paymentProductGroups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = paymentProductGroups.json; path = WorldlineConnectSDKTests/Resources/paymentProductGroups.json; sourceTree = "<group>"; };
+		BFAD7DA42BA3491D00A48165 /* paymentProductGroup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = paymentProductGroup.json; path = WorldlineConnectSDKTests/Resources/paymentProductGroup.json; sourceTree = "<group>"; };
+		BFAD7DA52BA3491D00A48165 /* paymentProductMissingFields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = paymentProductMissingFields.json; path = WorldlineConnectSDKTests/Resources/paymentProductMissingFields.json; sourceTree = "<group>"; };
+		BFAD7DA62BA3491D00A48165 /* paymentProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = paymentProducts.json; path = WorldlineConnectSDKTests/Resources/paymentProducts.json; sourceTree = "<group>"; };
+		BFE912212BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCC2SCommunicatorConfiguration.h; path = "API communication/WCC2SCommunicatorConfiguration.h"; sourceTree = "<group>"; };
+		BFE912222BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCC2SCommunicatorConfiguration.m; path = "API communication/WCC2SCommunicatorConfiguration.m"; sourceTree = "<group>"; };
+		BFE912232BA2F3FF00590193 /* WCC2SCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCC2SCommunicator.m; path = "API communication/WCC2SCommunicator.m"; sourceTree = "<group>"; };
+		BFE912242BA2F3FF00590193 /* WCC2SCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCC2SCommunicator.h; path = "API communication/WCC2SCommunicator.h"; sourceTree = "<group>"; };
+		BFE912292BA2F41700590193 /* WCBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBase64.m; path = Base64/WCBase64.m; sourceTree = "<group>"; };
+		BFE9122A2BA2F41700590193 /* WCBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBase64.h; path = Base64/WCBase64.h; sourceTree = "<group>"; };
+		BFE9122D2BA2F45100590193 /* WCSDKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCSDKConstants.h; path = Constants/WCSDKConstants.h; sourceTree = "<group>"; };
+		BFE9122F2BA2F4EC00590193 /* WCPaymentProductGroupsConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductGroupsConverter.m; path = Converters/WCPaymentProductGroupsConverter.m; sourceTree = "<group>"; };
+		BFE912302BA2F4EC00590193 /* WCBasicPaymentProductConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentProductConverter.m; path = Converters/WCBasicPaymentProductConverter.m; sourceTree = "<group>"; };
+		BFE912312BA2F4EC00590193 /* WCBasicPaymentProductGroupConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBasicPaymentProductGroupConverter.h; path = Converters/WCBasicPaymentProductGroupConverter.h; sourceTree = "<group>"; };
+		BFE912322BA2F4EC00590193 /* WCThirdPartyStatusResponseConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCThirdPartyStatusResponseConverter.h; path = Converters/WCThirdPartyStatusResponseConverter.h; sourceTree = "<group>"; };
+		BFE912332BA2F4EC00590193 /* WCBasicPaymentProductsConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentProductsConverter.m; path = Converters/WCBasicPaymentProductsConverter.m; sourceTree = "<group>"; };
+		BFE912342BA2F4EC00590193 /* WCPaymentContextConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentContextConverter.h; path = Converters/WCPaymentContextConverter.h; sourceTree = "<group>"; };
+		BFE912352BA2F4EC00590193 /* WCPaymentProductGroupsConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductGroupsConverter.h; path = Converters/WCPaymentProductGroupsConverter.h; sourceTree = "<group>"; };
+		BFE912362BA2F4EC00590193 /* WCBasicPaymentProductGroupConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentProductGroupConverter.m; path = Converters/WCBasicPaymentProductGroupConverter.m; sourceTree = "<group>"; };
+		BFE912372BA2F4EC00590193 /* WCBasicPaymentItemConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBasicPaymentItemConverter.h; path = Converters/WCBasicPaymentItemConverter.h; sourceTree = "<group>"; };
+		BFE912382BA2F4EC00590193 /* WCDirectoryEntriesConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCDirectoryEntriesConverter.h; path = Converters/WCDirectoryEntriesConverter.h; sourceTree = "<group>"; };
+		BFE912392BA2F4EC00590193 /* WCPaymentProductConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductConverter.h; path = Converters/WCPaymentProductConverter.h; sourceTree = "<group>"; };
+		BFE9123A2BA2F4EC00590193 /* WCDirectoryEntryConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCDirectoryEntryConverter.m; path = Converters/WCDirectoryEntryConverter.m; sourceTree = "<group>"; };
+		BFE9123B2BA2F4EC00590193 /* WCPaymentItemConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentItemConverter.m; path = Converters/WCPaymentItemConverter.m; sourceTree = "<group>"; };
+		BFE9123C2BA2F4EC00590193 /* WCPaymentProductGroupConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductGroupConverter.m; path = Converters/WCPaymentProductGroupConverter.m; sourceTree = "<group>"; };
+		BFE9123D2BA2F4EC00590193 /* WCDisplayElementsConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCDisplayElementsConverter.m; path = Converters/WCDisplayElementsConverter.m; sourceTree = "<group>"; };
+		BFE9123E2BA2F4EC00590193 /* WCDirectoryEntryConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCDirectoryEntryConverter.h; path = Converters/WCDirectoryEntryConverter.h; sourceTree = "<group>"; };
+		BFE9123F2BA2F4EC00590193 /* WCIINDetailsResponseConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCIINDetailsResponseConverter.m; path = Converters/WCIINDetailsResponseConverter.m; sourceTree = "<group>"; };
+		BFE912402BA2F4EC00590193 /* WCPaymentContextConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentContextConverter.m; path = Converters/WCPaymentContextConverter.m; sourceTree = "<group>"; };
+		BFE912412BA2F4EC00590193 /* WCBasicPaymentItemConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentItemConverter.m; path = Converters/WCBasicPaymentItemConverter.m; sourceTree = "<group>"; };
+		BFE912422BA2F4EC00590193 /* WCBasicPaymentProductConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBasicPaymentProductConverter.h; path = Converters/WCBasicPaymentProductConverter.h; sourceTree = "<group>"; };
+		BFE912432BA2F4EC00590193 /* WCPaymentProductConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductConverter.m; path = Converters/WCPaymentProductConverter.m; sourceTree = "<group>"; };
+		BFE912442BA2F4EC00590193 /* WCPaymentProductGroupConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductGroupConverter.h; path = Converters/WCPaymentProductGroupConverter.h; sourceTree = "<group>"; };
+		BFE912452BA2F4EC00590193 /* WCDisplayElementsConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCDisplayElementsConverter.h; path = Converters/WCDisplayElementsConverter.h; sourceTree = "<group>"; };
+		BFE912462BA2F4EC00590193 /* WCThirdPartyStatusResponseConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCThirdPartyStatusResponseConverter.m; path = Converters/WCThirdPartyStatusResponseConverter.m; sourceTree = "<group>"; };
+		BFE912472BA2F4EC00590193 /* WCPaymentItemConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentItemConverter.h; path = Converters/WCPaymentItemConverter.h; sourceTree = "<group>"; };
+		BFE912482BA2F4ED00590193 /* WCBasicPaymentProductsConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBasicPaymentProductsConverter.h; path = Converters/WCBasicPaymentProductsConverter.h; sourceTree = "<group>"; };
+		BFE912492BA2F4ED00590193 /* WCDirectoryEntriesConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCDirectoryEntriesConverter.m; path = Converters/WCDirectoryEntriesConverter.m; sourceTree = "<group>"; };
+		BFE9124A2BA2F4ED00590193 /* WCIINDetailsResponseConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCIINDetailsResponseConverter.h; path = Converters/WCIINDetailsResponseConverter.h; sourceTree = "<group>"; };
+		BFE912672BA2F56D00590193 /* WCEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCEncryptor.h; path = Cryptography/WCEncryptor.h; sourceTree = "<group>"; };
+		BFE912682BA2F56D00590193 /* WCEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCEncryptor.m; path = Cryptography/WCEncryptor.m; sourceTree = "<group>"; };
+		BFE912692BA2F56D00590193 /* WCJOSEEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCJOSEEncryptor.m; path = Cryptography/WCJOSEEncryptor.m; sourceTree = "<group>"; };
+		BFE9126A2BA2F56D00590193 /* WCJOSEEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCJOSEEncryptor.h; path = Cryptography/WCJOSEEncryptor.h; sourceTree = "<group>"; };
+		BFE9126F2BA2F59100590193 /* WCStringFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCStringFormatter.h; path = Formatters/WCStringFormatter.h; sourceTree = "<group>"; };
+		BFE912702BA2F59100590193 /* WCStringFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCStringFormatter.m; path = Formatters/WCStringFormatter.m; sourceTree = "<group>"; };
+		BFE912732BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCNetworkingActivityConsoleLogger.m; path = NetworkingLogger/WCNetworkingActivityConsoleLogger.m; sourceTree = "<group>"; };
+		BFE912742BA2F5C400590193 /* WCNetworkingActivityLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCNetworkingActivityLogger.h; path = NetworkingLogger/WCNetworkingActivityLogger.h; sourceTree = "<group>"; };
+		BFE912752BA2F5C400590193 /* WCNetworkingActivityLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCNetworkingActivityLogger.m; path = NetworkingLogger/WCNetworkingActivityLogger.m; sourceTree = "<group>"; };
+		BFE912762BA2F5C400590193 /* WCNetworkingActivityLoggerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCNetworkingActivityLoggerProtocol.h; path = NetworkingLogger/WCNetworkingActivityLoggerProtocol.h; sourceTree = "<group>"; };
+		BFE912772BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCNetworkingActivityConsoleLogger.h; path = NetworkingLogger/WCNetworkingActivityConsoleLogger.h; sourceTree = "<group>"; };
+		BFE9127D2BA2F5F500590193 /* WCBasicPaymentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBasicPaymentItem.h; path = Protocols/WCBasicPaymentItem.h; sourceTree = "<group>"; };
+		BFE9127E2BA2F5F500590193 /* WCPaymentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentItem.h; path = Protocols/WCPaymentItem.h; sourceTree = "<group>"; };
+		BFE912812BA2F64800590193 /* WCJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCJSON.h; path = Utils/WCJSON.h; sourceTree = "<group>"; };
+		BFE912822BA2F64800590193 /* WCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCUtil.h; path = Utils/WCUtil.h; sourceTree = "<group>"; };
+		BFE912832BA2F64800590193 /* WCJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCJSON.m; path = Utils/WCJSON.m; sourceTree = "<group>"; };
+		BFE912842BA2F64800590193 /* WCAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCAssetManager.h; path = Utils/WCAssetManager.h; sourceTree = "<group>"; };
+		BFE912852BA2F64800590193 /* WCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCUtil.m; path = Utils/WCUtil.m; sourceTree = "<group>"; };
+		BFE912862BA2F64800590193 /* WCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCMacros.h; path = Utils/WCMacros.h; sourceTree = "<group>"; };
+		BFE912872BA2F64800590193 /* WCAssetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAssetManager.m; path = Utils/WCAssetManager.m; sourceTree = "<group>"; };
+		BFE9128F2BA2F66D00590193 /* WCNetworkingWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCNetworkingWrapper.h; path = Wrappers/WCNetworkingWrapper.h; sourceTree = "<group>"; };
+		BFE912902BA2F66D00590193 /* WCNetworkingWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCNetworkingWrapper.m; path = Wrappers/WCNetworkingWrapper.m; sourceTree = "<group>"; };
+		BFE912932BA2F6C600590193 /* WCAccountOnFileAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAccountOnFileAttribute.m; path = Models/AccountOnFile/Attributes/WCAccountOnFileAttribute.m; sourceTree = "<group>"; };
+		BFE912942BA2F6C600590193 /* WCAccountOnFileAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAccountOnFileAttributes.m; path = Models/AccountOnFile/Attributes/WCAccountOnFileAttributes.m; sourceTree = "<group>"; };
+		BFE912952BA2F6C600590193 /* WCAccountOnFileAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCAccountOnFileAttributes.h; path = Models/AccountOnFile/Attributes/WCAccountOnFileAttributes.h; sourceTree = "<group>"; };
+		BFE912962BA2F6C600590193 /* WCAccountOnFileAttributeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCAccountOnFileAttributeStatus.h; path = Models/AccountOnFile/Attributes/WCAccountOnFileAttributeStatus.h; sourceTree = "<group>"; };
+		BFE912972BA2F6C600590193 /* WCAccountOnFileAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCAccountOnFileAttribute.h; path = Models/AccountOnFile/Attributes/WCAccountOnFileAttribute.h; sourceTree = "<group>"; };
+		BFE9129D2BA2F6F600590193 /* WCLabelTemplateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCLabelTemplateItem.m; path = Models/AccountOnFile/DisplayHints/WCLabelTemplateItem.m; sourceTree = "<group>"; };
+		BFE9129E2BA2F6F600590193 /* WCAccountOnFileDisplayHints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAccountOnFileDisplayHints.m; path = Models/AccountOnFile/DisplayHints/WCAccountOnFileDisplayHints.m; sourceTree = "<group>"; };
+		BFE9129F2BA2F6F700590193 /* WCLabelTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCLabelTemplate.h; path = Models/AccountOnFile/DisplayHints/WCLabelTemplate.h; sourceTree = "<group>"; };
+		BFE912A02BA2F6F700590193 /* WCLabelTemplateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCLabelTemplateItem.h; path = Models/AccountOnFile/DisplayHints/WCLabelTemplateItem.h; sourceTree = "<group>"; };
+		BFE912A12BA2F6F700590193 /* WCLabelTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCLabelTemplate.m; path = Models/AccountOnFile/DisplayHints/WCLabelTemplate.m; sourceTree = "<group>"; };
+		BFE912A22BA2F6F700590193 /* WCAccountOnFileDisplayHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCAccountOnFileDisplayHints.h; path = Models/AccountOnFile/DisplayHints/WCAccountOnFileDisplayHints.h; sourceTree = "<group>"; };
+		BFE912A92BA2F70F00590193 /* WCAccountsOnFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAccountsOnFile.m; path = Models/AccountOnFile/WCAccountsOnFile.m; sourceTree = "<group>"; };
+		BFE912AA2BA2F70F00590193 /* WCAccountOnFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCAccountOnFile.h; path = Models/AccountOnFile/WCAccountOnFile.h; sourceTree = "<group>"; };
+		BFE912AB2BA2F70F00590193 /* WCAccountsOnFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCAccountsOnFile.h; path = Models/AccountOnFile/WCAccountsOnFile.h; sourceTree = "<group>"; };
+		BFE912AC2BA2F70F00590193 /* WCAccountOnFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAccountOnFile.m; path = Models/AccountOnFile/WCAccountOnFile.m; sourceTree = "<group>"; };
+		BFE912B12BA2F73300590193 /* WCDirectoryEntries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCDirectoryEntries.m; path = Models/DirectoryEntry/WCDirectoryEntries.m; sourceTree = "<group>"; };
+		BFE912B22BA2F73300590193 /* WCDirectoryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCDirectoryEntry.h; path = Models/DirectoryEntry/WCDirectoryEntry.h; sourceTree = "<group>"; };
+		BFE912B32BA2F73300590193 /* WCDirectoryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCDirectoryEntry.m; path = Models/DirectoryEntry/WCDirectoryEntry.m; sourceTree = "<group>"; };
+		BFE912B42BA2F73300590193 /* WCDirectoryEntries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCDirectoryEntries.h; path = Models/DirectoryEntry/WCDirectoryEntries.h; sourceTree = "<group>"; };
+		BFE912B92BA2F75900590193 /* WCIINDetailsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCIINDetailsResponse.h; path = Models/IINDetails/WCIINDetailsResponse.h; sourceTree = "<group>"; };
+		BFE912BA2BA2F75900590193 /* WCIINDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCIINDetail.m; path = Models/IINDetails/WCIINDetail.m; sourceTree = "<group>"; };
+		BFE912BB2BA2F75900590193 /* WCIINStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCIINStatus.h; path = Models/IINDetails/WCIINStatus.h; sourceTree = "<group>"; };
+		BFE912BC2BA2F75900590193 /* WCIINDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCIINDetail.h; path = Models/IINDetails/WCIINDetail.h; sourceTree = "<group>"; };
+		BFE912BD2BA2F75900590193 /* WCIINDetailsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCIINDetailsResponse.m; path = Models/IINDetails/WCIINDetailsResponse.m; sourceTree = "<group>"; };
+		BFE912C32BA2F77A00590193 /* WCPaymentContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentContext.h; path = Models/PaymentContext/WCPaymentContext.h; sourceTree = "<group>"; };
+		BFE912C42BA2F77A00590193 /* WCPaymentAmountOfMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentAmountOfMoney.m; path = Models/PaymentContext/WCPaymentAmountOfMoney.m; sourceTree = "<group>"; };
+		BFE912C52BA2F77B00590193 /* WCPaymentAmountOfMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentAmountOfMoney.h; path = Models/PaymentContext/WCPaymentAmountOfMoney.h; sourceTree = "<group>"; };
+		BFE912C62BA2F77B00590193 /* WCPaymentContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentContext.m; path = Models/PaymentContext/WCPaymentContext.m; sourceTree = "<group>"; };
+		BFE912CB2BA2F79600590193 /* WCPaymentItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentItems.h; path = Models/PaymentItem/WCPaymentItems.h; sourceTree = "<group>"; };
+		BFE912CC2BA2F79600590193 /* WCPaymentItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentItems.m; path = Models/PaymentItem/WCPaymentItems.m; sourceTree = "<group>"; };
+		BFE912CD2BA2F79600590193 /* WCPaymentItemDisplayHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentItemDisplayHints.h; path = Models/PaymentItem/WCPaymentItemDisplayHints.h; sourceTree = "<group>"; };
+		BFE912CE2BA2F79600590193 /* WCPaymentItemDisplayHints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentItemDisplayHints.m; path = Models/PaymentItem/WCPaymentItemDisplayHints.m; sourceTree = "<group>"; };
+		BFE912D32BA2FCA100590193 /* WCPaymentProduct302SpecificData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProduct302SpecificData.h; path = Models/PaymentProduct/SpecificData/WCPaymentProduct302SpecificData.h; sourceTree = "<group>"; };
+		BFE912D42BA2FCA100590193 /* WCPaymentProduct320SpecificData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProduct320SpecificData.h; path = Models/PaymentProduct/SpecificData/WCPaymentProduct320SpecificData.h; sourceTree = "<group>"; };
+		BFE912D52BA2FCA100590193 /* WCPaymentProduct320SpecificData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProduct320SpecificData.m; path = Models/PaymentProduct/SpecificData/WCPaymentProduct320SpecificData.m; sourceTree = "<group>"; };
+		BFE912D62BA2FCA100590193 /* WCPaymentProduct863SpecificData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProduct863SpecificData.m; path = Models/PaymentProduct/SpecificData/WCPaymentProduct863SpecificData.m; sourceTree = "<group>"; };
+		BFE912D72BA2FCA100590193 /* WCPaymentProduct863SpecificData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProduct863SpecificData.h; path = Models/PaymentProduct/SpecificData/WCPaymentProduct863SpecificData.h; sourceTree = "<group>"; };
+		BFE912D82BA2FCA100590193 /* WCPaymentProduct302SpecificData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProduct302SpecificData.m; path = Models/PaymentProduct/SpecificData/WCPaymentProduct302SpecificData.m; sourceTree = "<group>"; };
+		BFE912DF2BA2FCE500590193 /* WCToolTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCToolTip.h; path = Models/PaymentProduct/Field/DisplayHints/WCToolTip.h; sourceTree = "<group>"; };
+		BFE912E02BA2FCE500590193 /* WCFormElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCFormElement.m; path = Models/PaymentProduct/Field/DisplayHints/WCFormElement.m; sourceTree = "<group>"; };
+		BFE912E12BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductFieldDisplayHints.m; path = Models/PaymentProduct/Field/DisplayHints/WCPaymentProductFieldDisplayHints.m; sourceTree = "<group>"; };
+		BFE912E22BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductFieldDisplayHints.h; path = Models/PaymentProduct/Field/DisplayHints/WCPaymentProductFieldDisplayHints.h; sourceTree = "<group>"; };
+		BFE912E32BA2FCE500590193 /* WCToolTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCToolTip.m; path = Models/PaymentProduct/Field/DisplayHints/WCToolTip.m; sourceTree = "<group>"; };
+		BFE912E42BA2FCE500590193 /* WCDisplayElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCDisplayElement.m; path = Models/PaymentProduct/Field/DisplayHints/WCDisplayElement.m; sourceTree = "<group>"; };
+		BFE912E52BA2FCE500590193 /* WCDisplayElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCDisplayElement.h; path = Models/PaymentProduct/Field/DisplayHints/WCDisplayElement.h; sourceTree = "<group>"; };
+		BFE912E62BA2FCE500590193 /* WCFormElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFormElement.h; path = Models/PaymentProduct/Field/DisplayHints/WCFormElement.h; sourceTree = "<group>"; };
+		BFE912E72BA2FCE500590193 /* WCPreferredInputType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPreferredInputType.h; path = Models/PaymentProduct/Field/DisplayHints/WCPreferredInputType.h; sourceTree = "<group>"; };
+		BFE912E82BA2FCE500590193 /* WCDisplayElementType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCDisplayElementType.h; path = Models/PaymentProduct/Field/DisplayHints/WCDisplayElementType.h; sourceTree = "<group>"; };
+		BFE912E92BA2FCE500590193 /* WCFormElementType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFormElementType.h; path = Models/PaymentProduct/Field/DisplayHints/WCFormElementType.h; sourceTree = "<group>"; };
+		BFE912F52BA2FD1300590193 /* WCType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCType.h; path = Models/PaymentProduct/Field/WCType.h; sourceTree = "<group>"; };
+		BFE912F62BA2FD1300590193 /* WCPaymentProductFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductFields.h; path = Models/PaymentProduct/Field/WCPaymentProductFields.h; sourceTree = "<group>"; };
+		BFE912F72BA2FD1300590193 /* WCPaymentProductFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductFields.m; path = Models/PaymentProduct/Field/WCPaymentProductFields.m; sourceTree = "<group>"; };
+		BFE912F82BA2FD1300590193 /* WCPaymentProductField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductField.h; path = Models/PaymentProduct/Field/WCPaymentProductField.h; sourceTree = "<group>"; };
+		BFE912F92BA2FD1300590193 /* WCPaymentProductField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductField.m; path = Models/PaymentProduct/Field/WCPaymentProductField.m; sourceTree = "<group>"; };
+		BFE912FA2BA2FD1300590193 /* WCDataRestrictions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCDataRestrictions.h; path = Models/PaymentProduct/Field/WCDataRestrictions.h; sourceTree = "<group>"; };
+		BFE912FB2BA2FD1300590193 /* WCDataRestrictions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCDataRestrictions.m; path = Models/PaymentProduct/Field/WCDataRestrictions.m; sourceTree = "<group>"; };
+		BFE913032BA2FD4100590193 /* WCAuthenticationIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAuthenticationIndicator.m; path = Models/PaymentProduct/WCAuthenticationIndicator.m; sourceTree = "<group>"; };
+		BFE913042BA2FD4100590193 /* WCBasicPaymentProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBasicPaymentProduct.h; path = Models/PaymentProduct/WCBasicPaymentProduct.h; sourceTree = "<group>"; };
+		BFE913052BA2FD4100590193 /* WCBasicPaymentProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentProduct.m; path = Models/PaymentProduct/WCBasicPaymentProduct.m; sourceTree = "<group>"; };
+		BFE913062BA2FD4100590193 /* WCBasicPaymentProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentProducts.m; path = Models/PaymentProduct/WCBasicPaymentProducts.m; sourceTree = "<group>"; };
+		BFE913072BA2FD4100590193 /* WCBasicPaymentProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBasicPaymentProducts.h; path = Models/PaymentProduct/WCBasicPaymentProducts.h; sourceTree = "<group>"; };
+		BFE913082BA2FD4100590193 /* WCAuthenticationIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCAuthenticationIndicator.h; path = Models/PaymentProduct/WCAuthenticationIndicator.h; sourceTree = "<group>"; };
+		BFE913092BA2FD4200590193 /* WCPaymentProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProduct.m; path = Models/PaymentProduct/WCPaymentProduct.m; sourceTree = "<group>"; };
+		BFE9130A2BA2FD4200590193 /* WCPaymentProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProduct.h; path = Models/PaymentProduct/WCPaymentProduct.h; sourceTree = "<group>"; };
+		BFE913132BA2FD7100590193 /* WCBasicPaymentProductGroups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentProductGroups.m; path = Models/PaymentProductGroup/WCBasicPaymentProductGroups.m; sourceTree = "<group>"; };
+		BFE913142BA2FD7100590193 /* WCPaymentProductGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductGroup.h; path = Models/PaymentProductGroup/WCPaymentProductGroup.h; sourceTree = "<group>"; };
+		BFE913152BA2FD7100590193 /* WCPaymentProductGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductGroup.m; path = Models/PaymentProductGroup/WCPaymentProductGroup.m; sourceTree = "<group>"; };
+		BFE913162BA2FD7100590193 /* WCBasicPaymentProductGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentProductGroup.m; path = Models/PaymentProductGroup/WCBasicPaymentProductGroup.m; sourceTree = "<group>"; };
+		BFE913172BA2FD7100590193 /* WCBasicPaymentProductGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBasicPaymentProductGroup.h; path = Models/PaymentProductGroup/WCBasicPaymentProductGroup.h; sourceTree = "<group>"; };
+		BFE913182BA2FD7100590193 /* WCBasicPaymentProductGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCBasicPaymentProductGroups.h; path = Models/PaymentProductGroup/WCBasicPaymentProductGroups.h; sourceTree = "<group>"; };
+		BFE9131F2BA2FD8E00590193 /* WCPaymentProductNetworks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductNetworks.h; path = Models/PaymentProductNetworks/WCPaymentProductNetworks.h; sourceTree = "<group>"; };
+		BFE913202BA2FD8E00590193 /* WCPaymentProductNetworks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductNetworks.m; path = Models/PaymentProductNetworks/WCPaymentProductNetworks.m; sourceTree = "<group>"; };
+		BFE913232BA2FDA600590193 /* WCPaymentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentRequest.h; path = Models/PaymentRequest/WCPaymentRequest.h; sourceTree = "<group>"; };
+		BFE913242BA2FDA600590193 /* WCPaymentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentRequest.m; path = Models/PaymentRequest/WCPaymentRequest.m; sourceTree = "<group>"; };
+		BFE913252BA2FDA600590193 /* WCPreparedPaymentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPreparedPaymentRequest.m; path = Models/PaymentRequest/WCPreparedPaymentRequest.m; sourceTree = "<group>"; };
+		BFE913262BA2FDA600590193 /* WCPreparedPaymentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPreparedPaymentRequest.h; path = Models/PaymentRequest/WCPreparedPaymentRequest.h; sourceTree = "<group>"; };
+		BFE9132B2BA2FDBF00590193 /* WCPrivacyPolicyResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPrivacyPolicyResponse.m; path = Models/PrivacyPolicy/WCPrivacyPolicyResponse.m; sourceTree = "<group>"; };
+		BFE9132C2BA2FDBF00590193 /* WCPrivacyPolicyResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPrivacyPolicyResponse.h; path = Models/PrivacyPolicy/WCPrivacyPolicyResponse.h; sourceTree = "<group>"; };
+		BFE9132F2BA2FDD000590193 /* WCPublicKeyResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPublicKeyResponse.h; path = Models/PublicKey/WCPublicKeyResponse.h; sourceTree = "<group>"; };
+		BFE913302BA2FDD000590193 /* WCPublicKeyResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPublicKeyResponse.m; path = Models/PublicKey/WCPublicKeyResponse.m; sourceTree = "<group>"; };
+		BFE913332BA2FDEC00590193 /* WCThirdPartyStatusResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCThirdPartyStatusResponse.m; path = Models/ThirdPartyStatus/WCThirdPartyStatusResponse.m; sourceTree = "<group>"; };
+		BFE913342BA2FDEC00590193 /* WCThirdPartyStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCThirdPartyStatus.h; path = Models/ThirdPartyStatus/WCThirdPartyStatus.h; sourceTree = "<group>"; };
+		BFE913352BA2FDEC00590193 /* WCThirdPartyStatusResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCThirdPartyStatusResponse.h; path = Models/ThirdPartyStatus/WCThirdPartyStatusResponse.h; sourceTree = "<group>"; };
+		BFE913392BA2FE1B00590193 /* WCValidationErrorRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorRegularExpression.m; path = Models/ValidationErrors/WCValidationErrorRegularExpression.m; sourceTree = "<group>"; };
+		BFE9133A2BA2FE1B00590193 /* WCValidationErrorAllowed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorAllowed.m; path = Models/ValidationErrors/WCValidationErrorAllowed.m; sourceTree = "<group>"; };
+		BFE9133B2BA2FE1B00590193 /* WCValidationErrorTermsAndConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorTermsAndConditions.h; path = Models/ValidationErrors/WCValidationErrorTermsAndConditions.h; sourceTree = "<group>"; };
+		BFE9133C2BA2FE1B00590193 /* WCValidationErrorIsRequired.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorIsRequired.m; path = Models/ValidationErrors/WCValidationErrorIsRequired.m; sourceTree = "<group>"; };
+		BFE9133D2BA2FE1B00590193 /* WCValidationErrorNumericString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorNumericString.h; path = Models/ValidationErrors/WCValidationErrorNumericString.h; sourceTree = "<group>"; };
+		BFE9133E2BA2FE1B00590193 /* WCValidationErrorTermsAndConditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorTermsAndConditions.m; path = Models/ValidationErrors/WCValidationErrorTermsAndConditions.m; sourceTree = "<group>"; };
+		BFE9133F2BA2FE1C00590193 /* WCValidationErrorLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorLength.m; path = Models/ValidationErrors/WCValidationErrorLength.m; sourceTree = "<group>"; };
+		BFE913402BA2FE1C00590193 /* WCResidentIdNumberError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCResidentIdNumberError.h; path = Models/ValidationErrors/WCResidentIdNumberError.h; sourceTree = "<group>"; };
+		BFE913412BA2FE1C00590193 /* WCValidationError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationError.m; path = Models/ValidationErrors/WCValidationError.m; sourceTree = "<group>"; };
+		BFE913422BA2FE1C00590193 /* WCValidationErrorInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorInteger.m; path = Models/ValidationErrors/WCValidationErrorInteger.m; sourceTree = "<group>"; };
+		BFE913432BA2FE1C00590193 /* WCValidationErrorIBAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorIBAN.m; path = Models/ValidationErrors/WCValidationErrorIBAN.m; sourceTree = "<group>"; };
+		BFE913442BA2FE1C00590193 /* WCValidationErrorRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorRange.h; path = Models/ValidationErrors/WCValidationErrorRange.h; sourceTree = "<group>"; };
+		BFE913452BA2FE1C00590193 /* WCValidationErrorIBAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorIBAN.h; path = Models/ValidationErrors/WCValidationErrorIBAN.h; sourceTree = "<group>"; };
+		BFE913462BA2FE1C00590193 /* WCValidationErrorLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorLength.h; path = Models/ValidationErrors/WCValidationErrorLength.h; sourceTree = "<group>"; };
+		BFE913472BA2FE1C00590193 /* WCValidationErrorExpirationDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorExpirationDate.h; path = Models/ValidationErrors/WCValidationErrorExpirationDate.h; sourceTree = "<group>"; };
+		BFE913482BA2FE1C00590193 /* WCValidationErrorExpirationDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorExpirationDate.m; path = Models/ValidationErrors/WCValidationErrorExpirationDate.m; sourceTree = "<group>"; };
+		BFE913492BA2FE1C00590193 /* WCResidentIdNumberError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCResidentIdNumberError.m; path = Models/ValidationErrors/WCResidentIdNumberError.m; sourceTree = "<group>"; };
+		BFE9134A2BA2FE1C00590193 /* WCValidationErrorLuhn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorLuhn.m; path = Models/ValidationErrors/WCValidationErrorLuhn.m; sourceTree = "<group>"; };
+		BFE9134B2BA2FE1C00590193 /* WCValidationErrorFixedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorFixedList.h; path = Models/ValidationErrors/WCValidationErrorFixedList.h; sourceTree = "<group>"; };
+		BFE9134C2BA2FE1C00590193 /* WCValidationError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationError.h; path = Models/ValidationErrors/WCValidationError.h; sourceTree = "<group>"; };
+		BFE9134D2BA2FE1C00590193 /* WCValidationErrorFixedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorFixedList.m; path = Models/ValidationErrors/WCValidationErrorFixedList.m; sourceTree = "<group>"; };
+		BFE9134E2BA2FE1C00590193 /* WCValidationErrorEmailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorEmailAddress.h; path = Models/ValidationErrors/WCValidationErrorEmailAddress.h; sourceTree = "<group>"; };
+		BFE9134F2BA2FE1C00590193 /* WCValidationErrorEmailAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorEmailAddress.m; path = Models/ValidationErrors/WCValidationErrorEmailAddress.m; sourceTree = "<group>"; };
+		BFE913502BA2FE1C00590193 /* WCValidationErrorRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorRange.m; path = Models/ValidationErrors/WCValidationErrorRange.m; sourceTree = "<group>"; };
+		BFE913512BA2FE1C00590193 /* WCValidationErrorIsRequired.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorIsRequired.h; path = Models/ValidationErrors/WCValidationErrorIsRequired.h; sourceTree = "<group>"; };
+		BFE913522BA2FE1C00590193 /* WCValidationErrorAllowed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorAllowed.h; path = Models/ValidationErrors/WCValidationErrorAllowed.h; sourceTree = "<group>"; };
+		BFE913532BA2FE1C00590193 /* WCValidationErrorRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorRegularExpression.h; path = Models/ValidationErrors/WCValidationErrorRegularExpression.h; sourceTree = "<group>"; };
+		BFE913542BA2FE1C00590193 /* WCValidationErrorLuhn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorLuhn.h; path = Models/ValidationErrors/WCValidationErrorLuhn.h; sourceTree = "<group>"; };
+		BFE913552BA2FE1C00590193 /* WCValidationErrorInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidationErrorInteger.h; path = Models/ValidationErrors/WCValidationErrorInteger.h; sourceTree = "<group>"; };
+		BFE913562BA2FE1C00590193 /* WCValidationErrorNumericString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidationErrorNumericString.m; path = Models/ValidationErrors/WCValidationErrorNumericString.m; sourceTree = "<group>"; };
+		BFE913752BA2FE8400590193 /* WCValidatorLuhn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorLuhn.h; path = Models/Validators/WCValidatorLuhn.h; sourceTree = "<group>"; };
+		BFE913762BA2FE8400590193 /* WCValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidator.m; path = Models/Validators/WCValidator.m; sourceTree = "<group>"; };
+		BFE913772BA2FE8400590193 /* WCValidatorRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorRange.m; path = Models/Validators/WCValidatorRange.m; sourceTree = "<group>"; };
+		BFE913782BA2FE8400590193 /* WCValidatorLength.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorLength.h; path = Models/Validators/WCValidatorLength.h; sourceTree = "<group>"; };
+		BFE913792BA2FE8400590193 /* WCValidatorTermsAndConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorTermsAndConditions.h; path = Models/Validators/WCValidatorTermsAndConditions.h; sourceTree = "<group>"; };
+		BFE9137A2BA2FE8400590193 /* WCValidatorIBAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorIBAN.h; path = Models/Validators/WCValidatorIBAN.h; sourceTree = "<group>"; };
+		BFE9137B2BA2FE8400590193 /* WCValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidator.h; path = Models/Validators/WCValidator.h; sourceTree = "<group>"; };
+		BFE9137C2BA2FE8500590193 /* WCValidatorTermsAndConditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorTermsAndConditions.m; path = Models/Validators/WCValidatorTermsAndConditions.m; sourceTree = "<group>"; };
+		BFE9137D2BA2FE8500590193 /* WCValidatorLuhn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorLuhn.m; path = Models/Validators/WCValidatorLuhn.m; sourceTree = "<group>"; };
+		BFE9137E2BA2FE8500590193 /* WCValidatorExpirationDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorExpirationDate.m; path = Models/Validators/WCValidatorExpirationDate.m; sourceTree = "<group>"; };
+		BFE9137F2BA2FE8500590193 /* WCValidatorResidentIdNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorResidentIdNumber.h; path = Models/Validators/WCValidatorResidentIdNumber.h; sourceTree = "<group>"; };
+		BFE913802BA2FE8500590193 /* WCValidatorResidentIdNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorResidentIdNumber.m; path = Models/Validators/WCValidatorResidentIdNumber.m; sourceTree = "<group>"; };
+		BFE913812BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorBoletoBancarioRequiredness.h; path = Models/Validators/WCValidatorBoletoBancarioRequiredness.h; sourceTree = "<group>"; };
+		BFE913822BA2FE8500590193 /* WCValidatorLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorLength.m; path = Models/Validators/WCValidatorLength.m; sourceTree = "<group>"; };
+		BFE913832BA2FE8500590193 /* WCValidatorEmailAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorEmailAddress.m; path = Models/Validators/WCValidatorEmailAddress.m; sourceTree = "<group>"; };
+		BFE913842BA2FE8500590193 /* WCValidatorExpirationDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorExpirationDate.h; path = Models/Validators/WCValidatorExpirationDate.h; sourceTree = "<group>"; };
+		BFE913852BA2FE8500590193 /* WCValidatorIBAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorIBAN.m; path = Models/Validators/WCValidatorIBAN.m; sourceTree = "<group>"; };
+		BFE913862BA2FE8500590193 /* WCValidatorFixedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorFixedList.h; path = Models/Validators/WCValidatorFixedList.h; sourceTree = "<group>"; };
+		BFE913872BA2FE8500590193 /* WCValidators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidators.m; path = Models/Validators/WCValidators.m; sourceTree = "<group>"; };
+		BFE913882BA2FE8500590193 /* WCValidatorRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorRegularExpression.m; path = Models/Validators/WCValidatorRegularExpression.m; sourceTree = "<group>"; };
+		BFE913892BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorBoletoBancarioRequiredness.m; path = Models/Validators/WCValidatorBoletoBancarioRequiredness.m; sourceTree = "<group>"; };
+		BFE9138A2BA2FE8500590193 /* WCValidatorEmailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorEmailAddress.h; path = Models/Validators/WCValidatorEmailAddress.h; sourceTree = "<group>"; };
+		BFE9138B2BA2FE8500590193 /* WCValidatorRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorRange.h; path = Models/Validators/WCValidatorRange.h; sourceTree = "<group>"; };
+		BFE9138C2BA2FE8500590193 /* WCValidators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidators.h; path = Models/Validators/WCValidators.h; sourceTree = "<group>"; };
+		BFE9138D2BA2FE8500590193 /* WCValidatorFixedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorFixedList.m; path = Models/Validators/WCValidatorFixedList.m; sourceTree = "<group>"; };
+		BFE9138E2BA2FE8500590193 /* WCValidatorRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValidatorRegularExpression.h; path = Models/Validators/WCValidatorRegularExpression.h; sourceTree = "<group>"; };
+		BFE913A92BA2FEA100590193 /* WCValueMappingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCValueMappingItem.h; path = Models/PaymentProduct/Field/DisplayHints/WCValueMappingItem.h; sourceTree = "<group>"; };
+		BFE913AA2BA2FEA100590193 /* WCValueMappingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValueMappingItem.m; path = Models/PaymentProduct/Field/DisplayHints/WCValueMappingItem.m; sourceTree = "<group>"; };
+		BFE913B62BA3008B00590193 /* WCC2SCommunicatorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCC2SCommunicatorTestCase.m; path = "WorldlineConnectSDKTests/API communication/WCC2SCommunicatorTestCase.m"; sourceTree = "<group>"; };
+		BFE913B72BA3008B00590193 /* WCC2SCommunicatorConfigurationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCC2SCommunicatorConfigurationTestCase.m; path = "WorldlineConnectSDKTests/API communication/WCC2SCommunicatorConfigurationTestCase.m"; sourceTree = "<group>"; };
+		BFE913BA2BA300A500590193 /* WCBase64TestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBase64TestCase.m; path = WorldlineConnectSDKTests/Base64/WCBase64TestCase.m; sourceTree = "<group>"; };
+		BFE913BC2BA300D600590193 /* WCBasicPaymentGroupConverterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentGroupConverterTestCase.m; path = WorldlineConnectSDKTests/Converters/WCBasicPaymentGroupConverterTestCase.m; sourceTree = "<group>"; };
+		BFE913BD2BA300D600590193 /* WCPaymentGroupConverterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentGroupConverterTestCase.m; path = WorldlineConnectSDKTests/Converters/WCPaymentGroupConverterTestCase.m; sourceTree = "<group>"; };
+		BFE913BE2BA300D600590193 /* WCPaymentGroupsConverterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentGroupsConverterTestCase.m; path = WorldlineConnectSDKTests/Converters/WCPaymentGroupsConverterTestCase.m; sourceTree = "<group>"; };
+		BFE913BF2BA300D600590193 /* WCBasicPaymentProductConverterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentProductConverterTestCase.m; path = WorldlineConnectSDKTests/Converters/WCBasicPaymentProductConverterTestCase.m; sourceTree = "<group>"; };
+		BFE913C02BA300D600590193 /* WCPaymentProductConverterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductConverterTestCase.m; path = WorldlineConnectSDKTests/Converters/WCPaymentProductConverterTestCase.m; sourceTree = "<group>"; };
+		BFE913C12BA300D600590193 /* WCPaymentProductsConverterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductsConverterTestCase.m; path = WorldlineConnectSDKTests/Converters/WCPaymentProductsConverterTestCase.m; sourceTree = "<group>"; };
+		BFE913C82BA300F400590193 /* WCJOSEEncryptorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCJOSEEncryptorTestCase.m; path = WorldlineConnectSDKTests/Cryptography/WCJOSEEncryptorTestCase.m; sourceTree = "<group>"; };
+		BFE913C92BA300F400590193 /* WCEncryptorTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCEncryptorTestCase.m; path = WorldlineConnectSDKTests/Cryptography/WCEncryptorTestCase.m; sourceTree = "<group>"; };
+		BFE913CC2BA3010B00590193 /* WCStringFormatterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCStringFormatterTestCase.m; path = WorldlineConnectSDKTests/Formatters/WCStringFormatterTestCase.m; sourceTree = "<group>"; };
+		BFE913CE2BA3012200590193 /* WCStubUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCStubUtil.h; path = WorldlineConnectSDKTests/Stubs/WCStubUtil.h; sourceTree = "<group>"; };
+		BFE913CF2BA3012200590193 /* WCStubUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCStubUtil.m; path = WorldlineConnectSDKTests/Stubs/WCStubUtil.m; sourceTree = "<group>"; };
+		BFE913D22BA3014500590193 /* WCJSONTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCJSONTestCase.m; path = WorldlineConnectSDKTests/Utils/WCJSONTestCase.m; sourceTree = "<group>"; };
+		BFE913D32BA3014500590193 /* WCUtilTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCUtilTestCase.m; path = WorldlineConnectSDKTests/Utils/WCUtilTestCase.m; sourceTree = "<group>"; };
+		BFE913D62BA3016300590193 /* WCNetworkingWrapperTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCNetworkingWrapperTestCase.m; path = WorldlineConnectSDKTests/Wrappers/WCNetworkingWrapperTestCase.m; sourceTree = "<group>"; };
+		BFE913D82BA3019400590193 /* WCAccountOnFileAttributesTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAccountOnFileAttributesTestCase.m; path = WorldlineConnectSDKTests/Models/AccountOnFile/Attributes/WCAccountOnFileAttributesTestCase.m; sourceTree = "<group>"; };
+		BFE913DA2BA3019B00590193 /* WCLabelTemplateTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCLabelTemplateTestCase.m; path = WorldlineConnectSDKTests/Models/AccountOnFile/DisplayHints/WCLabelTemplateTestCase.m; sourceTree = "<group>"; };
+		BFE913DC2BA301A400590193 /* WCAccountOnFileTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAccountOnFileTestCase.m; path = WorldlineConnectSDKTests/Models/AccountOnFile/WCAccountOnFileTestCase.m; sourceTree = "<group>"; };
+		BFE913DD2BA301A400590193 /* WCAccountsOnFileTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAccountsOnFileTestCase.m; path = WorldlineConnectSDKTests/Models/AccountOnFile/WCAccountsOnFileTestCase.m; sourceTree = "<group>"; };
+		BFE913E02BA301C400590193 /* WCPaymentProductFieldsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductFieldsTestCase.m; path = WorldlineConnectSDKTests/Models/PaymentProduct/Field/WCPaymentProductFieldsTestCase.m; sourceTree = "<group>"; };
+		BFE913E12BA301C400590193 /* WCPaymentProductFieldTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductFieldTestCase.m; path = WorldlineConnectSDKTests/Models/PaymentProduct/Field/WCPaymentProductFieldTestCase.m; sourceTree = "<group>"; };
+		BFE913E42BA301DB00590193 /* WCBasicPaymentProductTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCBasicPaymentProductTestCase.m; path = WorldlineConnectSDKTests/Models/PaymentProduct/WCBasicPaymentProductTestCase.m; sourceTree = "<group>"; };
+		BFE913E52BA301DB00590193 /* WCPaymentProductTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductTestCase.m; path = WorldlineConnectSDKTests/Models/PaymentProduct/WCPaymentProductTestCase.m; sourceTree = "<group>"; };
+		BFE913E62BA301DB00590193 /* WCPaymentProductsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductsTestCase.m; path = WorldlineConnectSDKTests/Models/PaymentProduct/WCPaymentProductsTestCase.m; sourceTree = "<group>"; };
+		BFE913EA2BA301F000590193 /* WCPaymentRequestTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentRequestTestCase.m; path = WorldlineConnectSDKTests/Models/PaymentRequest/WCPaymentRequestTestCase.m; sourceTree = "<group>"; };
+		BFE913EC2BA3020F00590193 /* WCValidatorLengthTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorLengthTestCase.m; path = WorldlineConnectSDKTests/Models/Validators/WCValidatorLengthTestCase.m; sourceTree = "<group>"; };
+		BFE913ED2BA3020F00590193 /* WCValidatorEmailAddressTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorEmailAddressTestCase.m; path = WorldlineConnectSDKTests/Models/Validators/WCValidatorEmailAddressTestCase.m; sourceTree = "<group>"; };
+		BFE913EE2BA3020F00590193 /* WCValidatorFixedListTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorFixedListTestCase.m; path = WorldlineConnectSDKTests/Models/Validators/WCValidatorFixedListTestCase.m; sourceTree = "<group>"; };
+		BFE913EF2BA3020F00590193 /* WCValidatorRangeTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorRangeTestCase.m; path = WorldlineConnectSDKTests/Models/Validators/WCValidatorRangeTestCase.m; sourceTree = "<group>"; };
+		BFE913F02BA3020F00590193 /* WCValidatorLuhnTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorLuhnTestCase.m; path = WorldlineConnectSDKTests/Models/Validators/WCValidatorLuhnTestCase.m; sourceTree = "<group>"; };
+		BFE913F12BA3020F00590193 /* WCValidatorExpirationDateTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorExpirationDateTestCase.m; path = WorldlineConnectSDKTests/Models/Validators/WCValidatorExpirationDateTestCase.m; sourceTree = "<group>"; };
+		BFE913F22BA3020F00590193 /* WCValidatorRegularExpressionTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorRegularExpressionTestCase.m; path = WorldlineConnectSDKTests/Models/Validators/WCValidatorRegularExpressionTestCase.m; sourceTree = "<group>"; };
+		BFE913F32BA3020F00590193 /* WCValidatorResidentIdNumberTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCValidatorResidentIdNumberTestCase.m; path = WorldlineConnectSDKTests/Models/Validators/WCValidatorResidentIdNumberTestCase.m; sourceTree = "<group>"; };
+		F5353A921E1F978C002A323E /* WorldlineConnectSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WorldlineConnectSDK.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4D77C5D1DE72EB900F7B1C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D77C671DE72EB900F7B1C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D77C6B1DE72EB900F7B1C1 /* WorldlineConnectSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36327ED62B7B776700A34DC7 /* PrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9132C2BA2FDBF00590193 /* WCPrivacyPolicyResponse.h */,
+				BFE9132B2BA2FDBF00590193 /* WCPrivacyPolicyResponse.m */,
+			);
+			name = PrivacyPolicy;
+			sourceTree = "<group>";
+		};
+		7BE7C7242953499F00657F2F /* KeychainEntitlementTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7C7252953499F00657F2F /* KeychainEntitlementTestAppApp.swift */,
+			);
+			path = KeychainEntitlementTestApp;
+			sourceTree = "<group>";
+		};
+		B4C3699B1DE754C100C50450 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913D62BA3016300590193 /* WCNetworkingWrapperTestCase.m */,
+			);
+			name = Wrappers;
+			sourceTree = "<group>";
+		};
+		B4C3699E1DE754C100C50450 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913CE2BA3012200590193 /* WCStubUtil.h */,
+				BFE913CF2BA3012200590193 /* WCStubUtil.m */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
+		B4C369A11DE754C100C50450 /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913C92BA300F400590193 /* WCEncryptorTestCase.m */,
+				BFE913C82BA300F400590193 /* WCJOSEEncryptorTestCase.m */,
+			);
+			name = Cryptography;
+			sourceTree = "<group>";
+		};
+		B4C369A51DE754C100C50450 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913BA2BA300A500590193 /* WCBase64TestCase.m */,
+			);
+			name = Base64;
+			sourceTree = "<group>";
+		};
+		B4C369A71DE754C100C50450 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913CC2BA3010B00590193 /* WCStringFormatterTestCase.m */,
+			);
+			name = Formatters;
+			sourceTree = "<group>";
+		};
+		B4C369AE1DE754C100C50450 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913BC2BA300D600590193 /* WCBasicPaymentGroupConverterTestCase.m */,
+				BFE913BF2BA300D600590193 /* WCBasicPaymentProductConverterTestCase.m */,
+				BFE913BD2BA300D600590193 /* WCPaymentGroupConverterTestCase.m */,
+				BFE913BE2BA300D600590193 /* WCPaymentGroupsConverterTestCase.m */,
+				BFE913C02BA300D600590193 /* WCPaymentProductConverterTestCase.m */,
+				BFE913C12BA300D600590193 /* WCPaymentProductsConverterTestCase.m */,
+			);
+			name = Converters;
+			sourceTree = "<group>";
+		};
+		B4C369C01DE754C100C50450 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913AF2BA2FF5100590193 /* AccountOnFile */,
+				BFE913B32BA2FF9600590193 /* PaymentProduct */,
+				BFE913B12BA2FF7500590193 /* PaymentRequest */,
+				BFE913B02BA2FF5D00590193 /* Validators */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B4C369C81DE754C100C50450 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFAD7DA12BA3491D00A48165 /* certificate.pfx */,
+				BFAD7DA22BA3491D00A48165 /* paymentProduct.json */,
+				BFAD7DA42BA3491D00A48165 /* paymentProductGroup.json */,
+				BFAD7DA32BA3491D00A48165 /* paymentProductGroups.json */,
+				BFAD7DA52BA3491D00A48165 /* paymentProductMissingFields.json */,
+				BFAD7DA62BA3491D00A48165 /* paymentProducts.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B4D77C571DE72EB900F7B1C1 = {
+			isa = PBXGroup;
+			children = (
+				B4D77C631DE72EB900F7B1C1 /* WorldlineConnectSDK */,
+				B4D77C6E1DE72EB900F7B1C1 /* WorldlineConnectSDKTests */,
+				7BE7C7242953499F00657F2F /* KeychainEntitlementTestApp */,
+				B4D77C621DE72EB900F7B1C1 /* Products */,
+				B9B900352330DBF8007993DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B4D77C621DE72EB900F7B1C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4D77C611DE72EB900F7B1C1 /* WorldlineConnectSDK.framework */,
+				B4D77C6A1DE72EB900F7B1C1 /* WorldlineConnectSDKTests.xctest */,
+				7BE7C7232953499F00657F2F /* KeychainEntitlementTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4D77C631DE72EB900F7B1C1 /* WorldlineConnectSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9120F2BA2ED7500590193 /* API communication */,
+				B4D77DD51DE72FB500F7B1C1 /* Base64 */,
+				B4D77DDC1DE72FEE00F7B1C1 /* Constants */,
+				B4D77DD81DE72FCE00F7B1C1 /* Converters */,
+				B4D77DD61DE72FBE00F7B1C1 /* Cryptography */,
+				B4D77DD71DE72FC600F7B1C1 /* Formatters */,
+				B4D77C651DE72EB900F7B1C1 /* Info.plist */,
+				B4D77E401DE730EC00F7B1C1 /* Models */,
+				B9E71D49241FDB7500EFCFEB /* NetworkingLogger */,
+				B4D77DDD1DE72FF300F7B1C1 /* Protocols */,
+				BFE912102BA2EDB800590193 /* Utils */,
+				B4D77DBF1DE72F4E00F7B1C1 /* WCSession.h */,
+				B4D77DC01DE72F4E00F7B1C1 /* WCSession.m */,
+				F5353A921E1F978C002A323E /* WorldlineConnectSDK.bundle */,
+				B4D77C641DE72EB900F7B1C1 /* WorldlineConnectSDK.h */,
+				B4D77DD31DE72F9E00F7B1C1 /* Wrappers */,
+			);
+			path = WorldlineConnectSDK;
+			sourceTree = "<group>";
+		};
+		B4D77C6E1DE72EB900F7B1C1 /* WorldlineConnectSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913AD2BA2FF0500590193 /* API communication */,
+				B4C369A51DE754C100C50450 /* Base64 */,
+				B4C369AE1DE754C100C50450 /* Converters */,
+				B4C369A11DE754C100C50450 /* Cryptography */,
+				B4C369A71DE754C100C50450 /* Formatters */,
+				B4C369C21DE754C100C50450 /* Info.plist */,
+				B4C369C01DE754C100C50450 /* Models */,
+				B4C3699E1DE754C100C50450 /* Stubs */,
+				B4C369C81DE754C100C50450 /* Resources */,
+				BFE913AE2BA2FF1F00590193 /* Utils */,
+				B4C3699B1DE754C100C50450 /* Wrappers */,
+			);
+			name = WorldlineConnectSDKTests;
+			sourceTree = "<group>";
+		};
+		B4D77DD31DE72F9E00F7B1C1 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9128F2BA2F66D00590193 /* WCNetworkingWrapper.h */,
+				BFE912902BA2F66D00590193 /* WCNetworkingWrapper.m */,
+			);
+			name = Wrappers;
+			sourceTree = "<group>";
+		};
+		B4D77DD51DE72FB500F7B1C1 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9122A2BA2F41700590193 /* WCBase64.h */,
+				BFE912292BA2F41700590193 /* WCBase64.m */,
+			);
+			name = Base64;
+			sourceTree = "<group>";
+		};
+		B4D77DD61DE72FBE00F7B1C1 /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912672BA2F56D00590193 /* WCEncryptor.h */,
+				BFE912682BA2F56D00590193 /* WCEncryptor.m */,
+				BFE9126A2BA2F56D00590193 /* WCJOSEEncryptor.h */,
+				BFE912692BA2F56D00590193 /* WCJOSEEncryptor.m */,
+			);
+			name = Cryptography;
+			sourceTree = "<group>";
+		};
+		B4D77DD71DE72FC600F7B1C1 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9126F2BA2F59100590193 /* WCStringFormatter.h */,
+				BFE912702BA2F59100590193 /* WCStringFormatter.m */,
+			);
+			name = Formatters;
+			sourceTree = "<group>";
+		};
+		B4D77DD81DE72FCE00F7B1C1 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912372BA2F4EC00590193 /* WCBasicPaymentItemConverter.h */,
+				BFE912412BA2F4EC00590193 /* WCBasicPaymentItemConverter.m */,
+				BFE912422BA2F4EC00590193 /* WCBasicPaymentProductConverter.h */,
+				BFE912302BA2F4EC00590193 /* WCBasicPaymentProductConverter.m */,
+				BFE912312BA2F4EC00590193 /* WCBasicPaymentProductGroupConverter.h */,
+				BFE912362BA2F4EC00590193 /* WCBasicPaymentProductGroupConverter.m */,
+				BFE912482BA2F4ED00590193 /* WCBasicPaymentProductsConverter.h */,
+				BFE912332BA2F4EC00590193 /* WCBasicPaymentProductsConverter.m */,
+				BFE912382BA2F4EC00590193 /* WCDirectoryEntriesConverter.h */,
+				BFE912492BA2F4ED00590193 /* WCDirectoryEntriesConverter.m */,
+				BFE9123E2BA2F4EC00590193 /* WCDirectoryEntryConverter.h */,
+				BFE9123A2BA2F4EC00590193 /* WCDirectoryEntryConverter.m */,
+				BFE912452BA2F4EC00590193 /* WCDisplayElementsConverter.h */,
+				BFE9123D2BA2F4EC00590193 /* WCDisplayElementsConverter.m */,
+				BFE9124A2BA2F4ED00590193 /* WCIINDetailsResponseConverter.h */,
+				BFE9123F2BA2F4EC00590193 /* WCIINDetailsResponseConverter.m */,
+				BFE912342BA2F4EC00590193 /* WCPaymentContextConverter.h */,
+				BFE912402BA2F4EC00590193 /* WCPaymentContextConverter.m */,
+				BFE912472BA2F4EC00590193 /* WCPaymentItemConverter.h */,
+				BFE9123B2BA2F4EC00590193 /* WCPaymentItemConverter.m */,
+				BFE912392BA2F4EC00590193 /* WCPaymentProductConverter.h */,
+				BFE912432BA2F4EC00590193 /* WCPaymentProductConverter.m */,
+				BFE912442BA2F4EC00590193 /* WCPaymentProductGroupConverter.h */,
+				BFE9123C2BA2F4EC00590193 /* WCPaymentProductGroupConverter.m */,
+				BFE912352BA2F4EC00590193 /* WCPaymentProductGroupsConverter.h */,
+				BFE9122F2BA2F4EC00590193 /* WCPaymentProductGroupsConverter.m */,
+				BFE912322BA2F4EC00590193 /* WCThirdPartyStatusResponseConverter.h */,
+				BFE912462BA2F4EC00590193 /* WCThirdPartyStatusResponseConverter.m */,
+			);
+			name = Converters;
+			sourceTree = "<group>";
+		};
+		B4D77DDC1DE72FEE00F7B1C1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9122D2BA2F45100590193 /* WCSDKConstants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		B4D77DDD1DE72FF300F7B1C1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9127D2BA2F5F500590193 /* WCBasicPaymentItem.h */,
+				BFE9127E2BA2F5F500590193 /* WCPaymentItem.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B4D77E401DE730EC00F7B1C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912112BA2EE1600590193 /* AccountOnFile */,
+				B4D77E411DE730F300F7B1C1 /* DirectoryEntry */,
+				B4D77E471DE7315600F7B1C1 /* IINDetails */,
+				B4D77E421DE730FE00F7B1C1 /* PaymentContext */,
+				BFE912162BA2EEA800590193 /* PaymentItem */,
+				B4D77E481DE7317E00F7B1C1 /* PaymentProduct */,
+				BFE912172BA2EEC900590193 /* PaymentProductGroup */,
+				BFE912182BA2EEEB00590193 /* PaymentProductNetworks */,
+				B4D77E431DE7310900F7B1C1 /* PaymentRequest */,
+				36327ED62B7B776700A34DC7 /* PrivacyPolicy */,
+				B4D77E461DE7314D00F7B1C1 /* PublicKey */,
+				BFE912192BA2EF1500590193 /* ThirdPartyStatus */,
+				BFE9121E2BA2F1B000590193 /* ValidationErrors */,
+				B4D77E451DE7311E00F7B1C1 /* Validators */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B4D77E411DE730F300F7B1C1 /* DirectoryEntry */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912B42BA2F73300590193 /* WCDirectoryEntries.h */,
+				BFE912B12BA2F73300590193 /* WCDirectoryEntries.m */,
+				BFE912B22BA2F73300590193 /* WCDirectoryEntry.h */,
+				BFE912B32BA2F73300590193 /* WCDirectoryEntry.m */,
+			);
+			name = DirectoryEntry;
+			sourceTree = "<group>";
+		};
+		B4D77E421DE730FE00F7B1C1 /* PaymentContext */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912C52BA2F77B00590193 /* WCPaymentAmountOfMoney.h */,
+				BFE912C42BA2F77A00590193 /* WCPaymentAmountOfMoney.m */,
+				BFE912C32BA2F77A00590193 /* WCPaymentContext.h */,
+				BFE912C62BA2F77B00590193 /* WCPaymentContext.m */,
+			);
+			name = PaymentContext;
+			sourceTree = "<group>";
+		};
+		B4D77E431DE7310900F7B1C1 /* PaymentRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913232BA2FDA600590193 /* WCPaymentRequest.h */,
+				BFE913242BA2FDA600590193 /* WCPaymentRequest.m */,
+				BFE913262BA2FDA600590193 /* WCPreparedPaymentRequest.h */,
+				BFE913252BA2FDA600590193 /* WCPreparedPaymentRequest.m */,
+			);
+			name = PaymentRequest;
+			sourceTree = "<group>";
+		};
+		B4D77E451DE7311E00F7B1C1 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9137B2BA2FE8400590193 /* WCValidator.h */,
+				BFE913762BA2FE8400590193 /* WCValidator.m */,
+				BFE913812BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.h */,
+				BFE913892BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.m */,
+				BFE9138A2BA2FE8500590193 /* WCValidatorEmailAddress.h */,
+				BFE913832BA2FE8500590193 /* WCValidatorEmailAddress.m */,
+				BFE913842BA2FE8500590193 /* WCValidatorExpirationDate.h */,
+				BFE9137E2BA2FE8500590193 /* WCValidatorExpirationDate.m */,
+				BFE913862BA2FE8500590193 /* WCValidatorFixedList.h */,
+				BFE9138D2BA2FE8500590193 /* WCValidatorFixedList.m */,
+				BFE9137A2BA2FE8400590193 /* WCValidatorIBAN.h */,
+				BFE913852BA2FE8500590193 /* WCValidatorIBAN.m */,
+				BFE913782BA2FE8400590193 /* WCValidatorLength.h */,
+				BFE913822BA2FE8500590193 /* WCValidatorLength.m */,
+				BFE913752BA2FE8400590193 /* WCValidatorLuhn.h */,
+				BFE9137D2BA2FE8500590193 /* WCValidatorLuhn.m */,
+				BFE9138B2BA2FE8500590193 /* WCValidatorRange.h */,
+				BFE913772BA2FE8400590193 /* WCValidatorRange.m */,
+				BFE9138E2BA2FE8500590193 /* WCValidatorRegularExpression.h */,
+				BFE913882BA2FE8500590193 /* WCValidatorRegularExpression.m */,
+				BFE9137F2BA2FE8500590193 /* WCValidatorResidentIdNumber.h */,
+				BFE913802BA2FE8500590193 /* WCValidatorResidentIdNumber.m */,
+				BFE9138C2BA2FE8500590193 /* WCValidators.h */,
+				BFE913872BA2FE8500590193 /* WCValidators.m */,
+				BFE913792BA2FE8400590193 /* WCValidatorTermsAndConditions.h */,
+				BFE9137C2BA2FE8500590193 /* WCValidatorTermsAndConditions.m */,
+			);
+			name = Validators;
+			sourceTree = "<group>";
+		};
+		B4D77E461DE7314D00F7B1C1 /* PublicKey */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9132F2BA2FDD000590193 /* WCPublicKeyResponse.h */,
+				BFE913302BA2FDD000590193 /* WCPublicKeyResponse.m */,
+			);
+			name = PublicKey;
+			sourceTree = "<group>";
+		};
+		B4D77E471DE7315600F7B1C1 /* IINDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912BC2BA2F75900590193 /* WCIINDetail.h */,
+				BFE912BA2BA2F75900590193 /* WCIINDetail.m */,
+				BFE912B92BA2F75900590193 /* WCIINDetailsResponse.h */,
+				BFE912BD2BA2F75900590193 /* WCIINDetailsResponse.m */,
+				BFE912BB2BA2F75900590193 /* WCIINStatus.h */,
+			);
+			name = IINDetails;
+			sourceTree = "<group>";
+		};
+		B4D77E481DE7317E00F7B1C1 /* PaymentProduct */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9121C2BA2F01200590193 /* Field */,
+				BFE9121B2BA2EFA600590193 /* SpecificData */,
+				BFE913082BA2FD4100590193 /* WCAuthenticationIndicator.h */,
+				BFE913032BA2FD4100590193 /* WCAuthenticationIndicator.m */,
+				BFE913042BA2FD4100590193 /* WCBasicPaymentProduct.h */,
+				BFE913052BA2FD4100590193 /* WCBasicPaymentProduct.m */,
+				BFE913072BA2FD4100590193 /* WCBasicPaymentProducts.h */,
+				BFE913062BA2FD4100590193 /* WCBasicPaymentProducts.m */,
+				BFE9130A2BA2FD4200590193 /* WCPaymentProduct.h */,
+				BFE913092BA2FD4200590193 /* WCPaymentProduct.m */,
+			);
+			name = PaymentProduct;
+			sourceTree = "<group>";
+		};
+		B9B900352330DBF8007993DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9E71D49241FDB7500EFCFEB /* NetworkingLogger */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912772BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.h */,
+				BFE912732BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.m */,
+				BFE912742BA2F5C400590193 /* WCNetworkingActivityLogger.h */,
+				BFE912752BA2F5C400590193 /* WCNetworkingActivityLogger.m */,
+				BFE912762BA2F5C400590193 /* WCNetworkingActivityLoggerProtocol.h */,
+			);
+			name = NetworkingLogger;
+			sourceTree = "<group>";
+		};
+		BFE9120F2BA2ED7500590193 /* API communication */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912242BA2F3FF00590193 /* WCC2SCommunicator.h */,
+				BFE912232BA2F3FF00590193 /* WCC2SCommunicator.m */,
+				BFE912212BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.h */,
+				BFE912222BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.m */,
+			);
+			name = "API communication";
+			sourceTree = "<group>";
+		};
+		BFE912102BA2EDB800590193 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912842BA2F64800590193 /* WCAssetManager.h */,
+				BFE912872BA2F64800590193 /* WCAssetManager.m */,
+				BFE912812BA2F64800590193 /* WCJSON.h */,
+				BFE912832BA2F64800590193 /* WCJSON.m */,
+				BFE912862BA2F64800590193 /* WCMacros.h */,
+				BFE912822BA2F64800590193 /* WCUtil.h */,
+				BFE912852BA2F64800590193 /* WCUtil.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		BFE912112BA2EE1600590193 /* AccountOnFile */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912122BA2EE2200590193 /* Attributes */,
+				BFE912132BA2EE4000590193 /* DisplayHints */,
+				BFE912AA2BA2F70F00590193 /* WCAccountOnFile.h */,
+				BFE912AC2BA2F70F00590193 /* WCAccountOnFile.m */,
+				BFE912AB2BA2F70F00590193 /* WCAccountsOnFile.h */,
+				BFE912A92BA2F70F00590193 /* WCAccountsOnFile.m */,
+			);
+			name = AccountOnFile;
+			sourceTree = "<group>";
+		};
+		BFE912122BA2EE2200590193 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912972BA2F6C600590193 /* WCAccountOnFileAttribute.h */,
+				BFE912932BA2F6C600590193 /* WCAccountOnFileAttribute.m */,
+				BFE912952BA2F6C600590193 /* WCAccountOnFileAttributes.h */,
+				BFE912942BA2F6C600590193 /* WCAccountOnFileAttributes.m */,
+				BFE912962BA2F6C600590193 /* WCAccountOnFileAttributeStatus.h */,
+			);
+			name = Attributes;
+			sourceTree = "<group>";
+		};
+		BFE912132BA2EE4000590193 /* DisplayHints */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912A22BA2F6F700590193 /* WCAccountOnFileDisplayHints.h */,
+				BFE9129E2BA2F6F600590193 /* WCAccountOnFileDisplayHints.m */,
+				BFE9129F2BA2F6F700590193 /* WCLabelTemplate.h */,
+				BFE912A12BA2F6F700590193 /* WCLabelTemplate.m */,
+				BFE912A02BA2F6F700590193 /* WCLabelTemplateItem.h */,
+				BFE9129D2BA2F6F600590193 /* WCLabelTemplateItem.m */,
+			);
+			name = DisplayHints;
+			sourceTree = "<group>";
+		};
+		BFE912162BA2EEA800590193 /* PaymentItem */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912CD2BA2F79600590193 /* WCPaymentItemDisplayHints.h */,
+				BFE912CE2BA2F79600590193 /* WCPaymentItemDisplayHints.m */,
+				BFE912CB2BA2F79600590193 /* WCPaymentItems.h */,
+				BFE912CC2BA2F79600590193 /* WCPaymentItems.m */,
+			);
+			name = PaymentItem;
+			sourceTree = "<group>";
+		};
+		BFE912172BA2EEC900590193 /* PaymentProductGroup */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913172BA2FD7100590193 /* WCBasicPaymentProductGroup.h */,
+				BFE913162BA2FD7100590193 /* WCBasicPaymentProductGroup.m */,
+				BFE913182BA2FD7100590193 /* WCBasicPaymentProductGroups.h */,
+				BFE913132BA2FD7100590193 /* WCBasicPaymentProductGroups.m */,
+				BFE913142BA2FD7100590193 /* WCPaymentProductGroup.h */,
+				BFE913152BA2FD7100590193 /* WCPaymentProductGroup.m */,
+			);
+			name = PaymentProductGroup;
+			sourceTree = "<group>";
+		};
+		BFE912182BA2EEEB00590193 /* PaymentProductNetworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9131F2BA2FD8E00590193 /* WCPaymentProductNetworks.h */,
+				BFE913202BA2FD8E00590193 /* WCPaymentProductNetworks.m */,
+			);
+			name = PaymentProductNetworks;
+			sourceTree = "<group>";
+		};
+		BFE912192BA2EF1500590193 /* ThirdPartyStatus */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913342BA2FDEC00590193 /* WCThirdPartyStatus.h */,
+				BFE913352BA2FDEC00590193 /* WCThirdPartyStatusResponse.h */,
+				BFE913332BA2FDEC00590193 /* WCThirdPartyStatusResponse.m */,
+			);
+			name = ThirdPartyStatus;
+			sourceTree = "<group>";
+		};
+		BFE9121B2BA2EFA600590193 /* SpecificData */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912D32BA2FCA100590193 /* WCPaymentProduct302SpecificData.h */,
+				BFE912D82BA2FCA100590193 /* WCPaymentProduct302SpecificData.m */,
+				BFE912D42BA2FCA100590193 /* WCPaymentProduct320SpecificData.h */,
+				BFE912D52BA2FCA100590193 /* WCPaymentProduct320SpecificData.m */,
+				BFE912D72BA2FCA100590193 /* WCPaymentProduct863SpecificData.h */,
+				BFE912D62BA2FCA100590193 /* WCPaymentProduct863SpecificData.m */,
+			);
+			name = SpecificData;
+			sourceTree = "<group>";
+		};
+		BFE9121C2BA2F01200590193 /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9121D2BA2F01700590193 /* DisplayHints */,
+				BFE912FA2BA2FD1300590193 /* WCDataRestrictions.h */,
+				BFE912FB2BA2FD1300590193 /* WCDataRestrictions.m */,
+				BFE912F82BA2FD1300590193 /* WCPaymentProductField.h */,
+				BFE912F92BA2FD1300590193 /* WCPaymentProductField.m */,
+				BFE912F62BA2FD1300590193 /* WCPaymentProductFields.h */,
+				BFE912F72BA2FD1300590193 /* WCPaymentProductFields.m */,
+				BFE912F52BA2FD1300590193 /* WCType.h */,
+			);
+			name = Field;
+			sourceTree = "<group>";
+		};
+		BFE9121D2BA2F01700590193 /* DisplayHints */ = {
+			isa = PBXGroup;
+			children = (
+				BFE912E52BA2FCE500590193 /* WCDisplayElement.h */,
+				BFE912E42BA2FCE500590193 /* WCDisplayElement.m */,
+				BFE912E82BA2FCE500590193 /* WCDisplayElementType.h */,
+				BFE912E62BA2FCE500590193 /* WCFormElement.h */,
+				BFE912E02BA2FCE500590193 /* WCFormElement.m */,
+				BFE912E92BA2FCE500590193 /* WCFormElementType.h */,
+				BFE912E22BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.h */,
+				BFE912E12BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.m */,
+				BFE912E72BA2FCE500590193 /* WCPreferredInputType.h */,
+				BFE912DF2BA2FCE500590193 /* WCToolTip.h */,
+				BFE912E32BA2FCE500590193 /* WCToolTip.m */,
+				BFE913A92BA2FEA100590193 /* WCValueMappingItem.h */,
+				BFE913AA2BA2FEA100590193 /* WCValueMappingItem.m */,
+			);
+			name = DisplayHints;
+			sourceTree = "<group>";
+		};
+		BFE9121E2BA2F1B000590193 /* ValidationErrors */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913402BA2FE1C00590193 /* WCResidentIdNumberError.h */,
+				BFE913492BA2FE1C00590193 /* WCResidentIdNumberError.m */,
+				BFE9134C2BA2FE1C00590193 /* WCValidationError.h */,
+				BFE913412BA2FE1C00590193 /* WCValidationError.m */,
+				BFE913522BA2FE1C00590193 /* WCValidationErrorAllowed.h */,
+				BFE9133A2BA2FE1B00590193 /* WCValidationErrorAllowed.m */,
+				BFE9134E2BA2FE1C00590193 /* WCValidationErrorEmailAddress.h */,
+				BFE9134F2BA2FE1C00590193 /* WCValidationErrorEmailAddress.m */,
+				BFE913472BA2FE1C00590193 /* WCValidationErrorExpirationDate.h */,
+				BFE913482BA2FE1C00590193 /* WCValidationErrorExpirationDate.m */,
+				BFE9134B2BA2FE1C00590193 /* WCValidationErrorFixedList.h */,
+				BFE9134D2BA2FE1C00590193 /* WCValidationErrorFixedList.m */,
+				BFE913452BA2FE1C00590193 /* WCValidationErrorIBAN.h */,
+				BFE913432BA2FE1C00590193 /* WCValidationErrorIBAN.m */,
+				BFE913552BA2FE1C00590193 /* WCValidationErrorInteger.h */,
+				BFE913422BA2FE1C00590193 /* WCValidationErrorInteger.m */,
+				BFE913512BA2FE1C00590193 /* WCValidationErrorIsRequired.h */,
+				BFE9133C2BA2FE1B00590193 /* WCValidationErrorIsRequired.m */,
+				BFE913462BA2FE1C00590193 /* WCValidationErrorLength.h */,
+				BFE9133F2BA2FE1C00590193 /* WCValidationErrorLength.m */,
+				BFE913542BA2FE1C00590193 /* WCValidationErrorLuhn.h */,
+				BFE9134A2BA2FE1C00590193 /* WCValidationErrorLuhn.m */,
+				BFE9133D2BA2FE1B00590193 /* WCValidationErrorNumericString.h */,
+				BFE913562BA2FE1C00590193 /* WCValidationErrorNumericString.m */,
+				BFE913442BA2FE1C00590193 /* WCValidationErrorRange.h */,
+				BFE913502BA2FE1C00590193 /* WCValidationErrorRange.m */,
+				BFE913532BA2FE1C00590193 /* WCValidationErrorRegularExpression.h */,
+				BFE913392BA2FE1B00590193 /* WCValidationErrorRegularExpression.m */,
+				BFE9133B2BA2FE1B00590193 /* WCValidationErrorTermsAndConditions.h */,
+				BFE9133E2BA2FE1B00590193 /* WCValidationErrorTermsAndConditions.m */,
+			);
+			name = ValidationErrors;
+			sourceTree = "<group>";
+		};
+		BFE913AD2BA2FF0500590193 /* API communication */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913B72BA3008B00590193 /* WCC2SCommunicatorConfigurationTestCase.m */,
+				BFE913B62BA3008B00590193 /* WCC2SCommunicatorTestCase.m */,
+			);
+			name = "API communication";
+			sourceTree = "<group>";
+		};
+		BFE913AE2BA2FF1F00590193 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913D22BA3014500590193 /* WCJSONTestCase.m */,
+				BFE913D32BA3014500590193 /* WCUtilTestCase.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		BFE913AF2BA2FF5100590193 /* AccountOnFile */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913B22BA2FF8200590193 /* Attributes */,
+				BFE913B52BA2FFCC00590193 /* DisplayHints */,
+				BFE913DC2BA301A400590193 /* WCAccountOnFileTestCase.m */,
+				BFE913DD2BA301A400590193 /* WCAccountsOnFileTestCase.m */,
+			);
+			name = AccountOnFile;
+			sourceTree = "<group>";
+		};
+		BFE913B02BA2FF5D00590193 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913ED2BA3020F00590193 /* WCValidatorEmailAddressTestCase.m */,
+				BFE913F12BA3020F00590193 /* WCValidatorExpirationDateTestCase.m */,
+				BFE913EE2BA3020F00590193 /* WCValidatorFixedListTestCase.m */,
+				BFE913EC2BA3020F00590193 /* WCValidatorLengthTestCase.m */,
+				BFE913F02BA3020F00590193 /* WCValidatorLuhnTestCase.m */,
+				BFE913EF2BA3020F00590193 /* WCValidatorRangeTestCase.m */,
+				BFE913F22BA3020F00590193 /* WCValidatorRegularExpressionTestCase.m */,
+				BFE913F32BA3020F00590193 /* WCValidatorResidentIdNumberTestCase.m */,
+			);
+			name = Validators;
+			sourceTree = "<group>";
+		};
+		BFE913B12BA2FF7500590193 /* PaymentRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913EA2BA301F000590193 /* WCPaymentRequestTestCase.m */,
+			);
+			name = PaymentRequest;
+			sourceTree = "<group>";
+		};
+		BFE913B22BA2FF8200590193 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913D82BA3019400590193 /* WCAccountOnFileAttributesTestCase.m */,
+			);
+			name = Attributes;
+			sourceTree = "<group>";
+		};
+		BFE913B32BA2FF9600590193 /* PaymentProduct */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913B42BA2FFAB00590193 /* Field */,
+				BFE913E42BA301DB00590193 /* WCBasicPaymentProductTestCase.m */,
+				BFE913E62BA301DB00590193 /* WCPaymentProductsTestCase.m */,
+				BFE913E52BA301DB00590193 /* WCPaymentProductTestCase.m */,
+			);
+			name = PaymentProduct;
+			sourceTree = "<group>";
+		};
+		BFE913B42BA2FFAB00590193 /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913E02BA301C400590193 /* WCPaymentProductFieldsTestCase.m */,
+				BFE913E12BA301C400590193 /* WCPaymentProductFieldTestCase.m */,
+			);
+			name = Field;
+			sourceTree = "<group>";
+		};
+		BFE913B52BA2FFCC00590193 /* DisplayHints */ = {
+			isa = PBXGroup;
+			children = (
+				BFE913DA2BA3019B00590193 /* WCLabelTemplateTestCase.m */,
+			);
+			name = DisplayHints;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B4D77C5E1DE72EB900F7B1C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D77C721DE72EB900F7B1C1 /* WorldlineConnectSDK.h in Headers */,
+				BFE912642BA2F4ED00590193 /* WCBasicPaymentProductsConverter.h in Headers */,
+				BFE9132A2BA2FDA600590193 /* WCPreparedPaymentRequest.h in Headers */,
+				BFE913992BA2FE8500590193 /* WCValidatorResidentIdNumber.h in Headers */,
+				BFE9127F2BA2F5F500590193 /* WCBasicPaymentItem.h in Headers */,
+				BFE912C72BA2F77B00590193 /* WCPaymentContext.h in Headers */,
+				BFE912F12BA2FCE500590193 /* WCFormElement.h in Headers */,
+				BFE912AE2BA2F70F00590193 /* WCAccountOnFile.h in Headers */,
+				BFE912BE2BA2F75900590193 /* WCIINDetailsResponse.h in Headers */,
+				BFE913122BA2FD4200590193 /* WCPaymentProduct.h in Headers */,
+				BFE9122E2BA2F45100590193 /* WCSDKConstants.h in Headers */,
+				BFE913372BA2FDEC00590193 /* WCThirdPartyStatus.h in Headers */,
+				BFE912C12BA2F75900590193 /* WCIINDetail.h in Headers */,
+				BFE912A62BA2F6F700590193 /* WCLabelTemplateItem.h in Headers */,
+				BFE912B62BA2F73300590193 /* WCDirectoryEntry.h in Headers */,
+				BFE9124D2BA2F4ED00590193 /* WCBasicPaymentProductGroupConverter.h in Headers */,
+				BFE9130F2BA2FD4200590193 /* WCBasicPaymentProducts.h in Headers */,
+				BFE9131D2BA2FD7100590193 /* WCBasicPaymentProductGroup.h in Headers */,
+				BFE9129C2BA2F6C600590193 /* WCAccountOnFileAttribute.h in Headers */,
+				BFE913922BA2FE8500590193 /* WCValidatorLength.h in Headers */,
+				BFE912912BA2F66D00590193 /* WCNetworkingWrapper.h in Headers */,
+				BFE912D12BA2F79600590193 /* WCPaymentItemDisplayHints.h in Headers */,
+				BFE9126B2BA2F56D00590193 /* WCEncryptor.h in Headers */,
+				BFE9135E2BA2FE1C00590193 /* WCResidentIdNumberError.h in Headers */,
+				BFE913952BA2FE8500590193 /* WCValidator.h in Headers */,
+				BFE913102BA2FD4200590193 /* WCAuthenticationIndicator.h in Headers */,
+				BFE913712BA2FE1C00590193 /* WCValidationErrorRegularExpression.h in Headers */,
+				B4D77C721DE72EB900F7B1C1 /* WorldlineConnectSDK.h in Headers */,
+				BFE912D92BA2FCA100590193 /* WCPaymentProduct302SpecificData.h in Headers */,
+				BFE9131A2BA2FD7100590193 /* WCPaymentProductGroup.h in Headers */,
+				BFE913272BA2FDA600590193 /* WCPaymentRequest.h in Headers */,
+				BFE912F42BA2FCE500590193 /* WCFormElementType.h in Headers */,
+				BFE912C02BA2F75900590193 /* WCIINStatus.h in Headers */,
+				BFE912FF2BA2FD1300590193 /* WCPaymentProductField.h in Headers */,
+				BFE913632BA2FE1C00590193 /* WCValidationErrorIBAN.h in Headers */,
+				BFE912662BA2F4ED00590193 /* WCIINDetailsResponseConverter.h in Headers */,
+				BFE912C92BA2F77B00590193 /* WCPaymentAmountOfMoney.h in Headers */,
+				BFE9131E2BA2FD7100590193 /* WCBasicPaymentProductGroups.h in Headers */,
+				BFE913AB2BA2FEA100590193 /* WCValueMappingItem.h in Headers */,
+				BFE913702BA2FE1C00590193 /* WCValidationErrorAllowed.h in Headers */,
+				BFE912A52BA2F6F700590193 /* WCLabelTemplate.h in Headers */,
+				BFE9126E2BA2F56D00590193 /* WCJOSEEncryptor.h in Headers */,
+				BFE913642BA2FE1C00590193 /* WCValidationErrorLength.h in Headers */,
+				BFE913732BA2FE1C00590193 /* WCValidationErrorInteger.h in Headers */,
+				BFE912252BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.h in Headers */,
+				BFE912CF2BA2F79600590193 /* WCPaymentItems.h in Headers */,
+				BFE9122C2BA2F41700590193 /* WCBase64.h in Headers */,
+				BFE9129A2BA2F6C600590193 /* WCAccountOnFileAttributes.h in Headers */,
+				BFE913312BA2FDD000590193 /* WCPublicKeyResponse.h in Headers */,
+				BFE9129B2BA2F6C600590193 /* WCAccountOnFileAttributeStatus.h in Headers */,
+				BFE914302BA3043D00590193 /* WCStubUtil.h in Headers */,
+				BFE912512BA2F4ED00590193 /* WCPaymentProductGroupsConverter.h in Headers */,
+				BFE912F32BA2FCE500590193 /* WCDisplayElementType.h in Headers */,
+				BFE9138F2BA2FE8500590193 /* WCValidatorLuhn.h in Headers */,
+				BFE913A42BA2FE8500590193 /* WCValidatorEmailAddress.h in Headers */,
+				BFE913622BA2FE1C00590193 /* WCValidationErrorRange.h in Headers */,
+				BFE912282BA2F3FF00590193 /* WCC2SCommunicator.h in Headers */,
+				BFE912A82BA2F6F700590193 /* WCAccountOnFileDisplayHints.h in Headers */,
+				BFE9135B2BA2FE1C00590193 /* WCValidationErrorNumericString.h in Headers */,
+				BFE912DA2BA2FCA100590193 /* WCPaymentProduct320SpecificData.h in Headers */,
+				BFE9130C2BA2FD4200590193 /* WCBasicPaymentProduct.h in Headers */,
+				BFE912FC2BA2FD1300590193 /* WCType.h in Headers */,
+				BFE912882BA2F64800590193 /* WCJSON.h in Headers */,
+				BFE912F22BA2FCE500590193 /* WCPreferredInputType.h in Headers */,
+				BFE912ED2BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.h in Headers */,
+				BFE9128B2BA2F64800590193 /* WCAssetManager.h in Headers */,
+				BFE9125A2BA2F4ED00590193 /* WCDirectoryEntryConverter.h in Headers */,
+				BFE912EA2BA2FCE500590193 /* WCToolTip.h in Headers */,
+				BFE912DD2BA2FCA100590193 /* WCPaymentProduct863SpecificData.h in Headers */,
+				BFE912542BA2F4ED00590193 /* WCDirectoryEntriesConverter.h in Headers */,
+				BFE912F02BA2FCE500590193 /* WCDisplayElement.h in Headers */,
+				BFE913A52BA2FE8500590193 /* WCValidatorRange.h in Headers */,
+				BFE9127B2BA2F5C400590193 /* WCNetworkingActivityLoggerProtocol.h in Headers */,
+				BFE9139B2BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.h in Headers */,
+				BFE912802BA2F5F500590193 /* WCPaymentItem.h in Headers */,
+				BFE9125E2BA2F4ED00590193 /* WCBasicPaymentProductConverter.h in Headers */,
+				BFE912B82BA2F73300590193 /* WCDirectoryEntries.h in Headers */,
+				BFE912502BA2F4ED00590193 /* WCPaymentContextConverter.h in Headers */,
+				BFE913652BA2FE1C00590193 /* WCValidationErrorExpirationDate.h in Headers */,
+				BFE912602BA2F4ED00590193 /* WCPaymentProductGroupConverter.h in Headers */,
+				BFE912532BA2F4ED00590193 /* WCBasicPaymentItemConverter.h in Headers */,
+				BFE9124E2BA2F4ED00590193 /* WCThirdPartyStatusResponseConverter.h in Headers */,
+				BFE9132E2BA2FDBF00590193 /* WCPrivacyPolicyResponse.h in Headers */,
+				BFE9136A2BA2FE1C00590193 /* WCValidationError.h in Headers */,
+				BFE9128D2BA2F64800590193 /* WCMacros.h in Headers */,
+				BFE913382BA2FDEC00590193 /* WCThirdPartyStatusResponse.h in Headers */,
+				BFE913932BA2FE8500590193 /* WCValidatorTermsAndConditions.h in Headers */,
+				BFE912892BA2F64800590193 /* WCUtil.h in Headers */,
+				BFE9127C2BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.h in Headers */,
+				BFE913942BA2FE8500590193 /* WCValidatorIBAN.h in Headers */,
+				BFE913692BA2FE1C00590193 /* WCValidationErrorFixedList.h in Headers */,
+				BFE913592BA2FE1C00590193 /* WCValidationErrorTermsAndConditions.h in Headers */,
+				BFE912552BA2F4ED00590193 /* WCPaymentProductConverter.h in Headers */,
+				BFE912632BA2F4ED00590193 /* WCPaymentItemConverter.h in Headers */,
+				BFE9136F2BA2FE1C00590193 /* WCValidationErrorIsRequired.h in Headers */,
+				BFE9139E2BA2FE8500590193 /* WCValidatorExpirationDate.h in Headers */,
+				BFE912712BA2F59100590193 /* WCStringFormatter.h in Headers */,
+				BFE912AF2BA2F70F00590193 /* WCAccountsOnFile.h in Headers */,
+				BFE912612BA2F4ED00590193 /* WCDisplayElementsConverter.h in Headers */,
+				BFE913012BA2FD1300590193 /* WCDataRestrictions.h in Headers */,
+				BFE912FD2BA2FD1300590193 /* WCPaymentProductFields.h in Headers */,
+				BFE913A02BA2FE8500590193 /* WCValidatorFixedList.h in Headers */,
+				BFE9136C2BA2FE1C00590193 /* WCValidationErrorEmailAddress.h in Headers */,
+				BFE913212BA2FD8E00590193 /* WCPaymentProductNetworks.h in Headers */,
+				BFE912792BA2F5C400590193 /* WCNetworkingActivityLogger.h in Headers */,
+				BFE913722BA2FE1C00590193 /* WCValidationErrorLuhn.h in Headers */,
+				BFE913A82BA2FE8500590193 /* WCValidatorRegularExpression.h in Headers */,
+				BFE913A62BA2FE8500590193 /* WCValidators.h in Headers */,
+				B4D77DC91DE72F4E00F7B1C1 /* WCSession.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7BE7C7222953499F00657F2F /* KeychainEntitlementTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE7C730295349A100657F2F /* Build configuration list for PBXNativeTarget "KeychainEntitlementTestApp" */;
+			buildPhases = (
+				7BE7C71F2953499F00657F2F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainEntitlementTestApp;
+			productName = KeychainEntitlementTestApp;
+			productReference = 7BE7C7232953499F00657F2F /* KeychainEntitlementTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4D77C601DE72EB900F7B1C1 /* WorldlineConnectSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D77C751DE72EB900F7B1C1 /* Build configuration list for PBXNativeTarget "WorldlineConnectSDK" */;
+			buildPhases = (
+				B4D77C5C1DE72EB900F7B1C1 /* Sources */,
+				B4D77C5D1DE72EB900F7B1C1 /* Frameworks */,
+				B4D77C5E1DE72EB900F7B1C1 /* Headers */,
+				B4D77C5F1DE72EB900F7B1C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldlineConnectSDK;
+			productName = WorldlineConnectSDK;
+			productReference = B4D77C611DE72EB900F7B1C1 /* WorldlineConnectSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4D77C691DE72EB900F7B1C1 /* WorldlineConnectSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D77C781DE72EB900F7B1C1 /* Build configuration list for PBXNativeTarget "WorldlineConnectSDKTests" */;
+			buildPhases = (
+				B4D77C661DE72EB900F7B1C1 /* Sources */,
+				B4D77C671DE72EB900F7B1C1 /* Frameworks */,
+				B4D77C681DE72EB900F7B1C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4D77C6D1DE72EB900F7B1C1 /* PBXTargetDependency */,
+				7BE7C732295349C300657F2F /* PBXTargetDependency */,
+			);
+			name = WorldlineConnectSDKTests;
+			productName = WorldlineConnectSDKTests;
+			productReference = B4D77C6A1DE72EB900F7B1C1 /* WorldlineConnectSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4D77C581DE72EB900F7B1C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Worldline Global Collect";
+				TargetAttributes = {
+					7BE7C7222953499F00657F2F = {
+						CreatedOnToolsVersion = 14.2;
+						ProvisioningStyle = Automatic;
+					};
+					B4D77C601DE72EB900F7B1C1 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					B4D77C691DE72EB900F7B1C1 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7BE7C7222953499F00657F2F;
+					};
+				};
+			};
+			buildConfigurationList = B4D77C5B1DE72EB900F7B1C1 /* Build configuration list for PBXProject "WorldlineConnectSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = B4D77C571DE72EB900F7B1C1;
+			productRefGroup = B4D77C621DE72EB900F7B1C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4D77C601DE72EB900F7B1C1 /* WorldlineConnectSDK */,
+				B4D77C691DE72EB900F7B1C1 /* WorldlineConnectSDKTests */,
+				7BE7C7222953499F00657F2F /* KeychainEntitlementTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4D77C5F1DE72EB900F7B1C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5353A931E1F978C002A323E /* WorldlineConnectSDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D77C681DE72EB900F7B1C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFAD7DA72BA3491D00A48165 /* certificate.pfx in Resources */,
+				BFAD7DAC2BA3491D00A48165 /* paymentProducts.json in Resources */,
+				BFAD7DA82BA3491D00A48165 /* paymentProduct.json in Resources */,
+				BFAD7DAA2BA3491D00A48165 /* paymentProductGroup.json in Resources */,
+				BFAD7DA92BA3491D00A48165 /* paymentProductGroups.json in Resources */,
+				BFAD7DAB2BA3491D00A48165 /* paymentProductMissingFields.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BE7C71F2953499F00657F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE7C7262953499F00657F2F /* KeychainEntitlementTestAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D77C5C1DE72EB900F7B1C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE912272BA2F3FF00590193 /* WCC2SCommunicator.m in Sources */,
+				BFE9135F2BA2FE1C00590193 /* WCValidationError.m in Sources */,
+				BFE912DC2BA2FCA100590193 /* WCPaymentProduct863SpecificData.m in Sources */,
+				BFE912D02BA2F79600590193 /* WCPaymentItems.m in Sources */,
+				BFE913902BA2FE8500590193 /* WCValidator.m in Sources */,
+				BFE9127A2BA2F5C400590193 /* WCNetworkingActivityLogger.m in Sources */,
+				BFE913022BA2FD1300590193 /* WCDataRestrictions.m in Sources */,
+				BFE9135A2BA2FE1C00590193 /* WCValidationErrorIsRequired.m in Sources */,
+				BFE913112BA2FD4200590193 /* WCPaymentProduct.m in Sources */,
+				BFE9128E2BA2F64800590193 /* WCAssetManager.m in Sources */,
+				BFE912CA2BA2F77B00590193 /* WCPaymentContext.m in Sources */,
+				BFE9124F2BA2F4ED00590193 /* WCBasicPaymentProductsConverter.m in Sources */,
+				BFE9130B2BA2FD4200590193 /* WCAuthenticationIndicator.m in Sources */,
+				BFE912B72BA2F73300590193 /* WCDirectoryEntry.m in Sources */,
+				BFE912C82BA2F77B00590193 /* WCPaymentAmountOfMoney.m in Sources */,
+				BFE912B02BA2F70F00590193 /* WCAccountOnFile.m in Sources */,
+				BFE9132D2BA2FDBF00590193 /* WCPrivacyPolicyResponse.m in Sources */,
+				BFE913682BA2FE1C00590193 /* WCValidationErrorLuhn.m in Sources */,
+				BFE9135D2BA2FE1C00590193 /* WCValidationErrorLength.m in Sources */,
+				BFE912572BA2F4ED00590193 /* WCPaymentItemConverter.m in Sources */,
+				BFE9131B2BA2FD7100590193 /* WCPaymentProductGroup.m in Sources */,
+				BFE913A22BA2FE8500590193 /* WCValidatorRegularExpression.m in Sources */,
+				BFE912262BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.m in Sources */,
+				BFE912992BA2F6C600590193 /* WCAccountOnFileAttributes.m in Sources */,
+				BFE9128A2BA2F64800590193 /* WCJSON.m in Sources */,
+				BFE913972BA2FE8500590193 /* WCValidatorLuhn.m in Sources */,
+				BFE9139D2BA2FE8500590193 /* WCValidatorEmailAddress.m in Sources */,
+				BFE912722BA2F59100590193 /* WCStringFormatter.m in Sources */,
+				BFE912522BA2F4ED00590193 /* WCBasicPaymentProductGroupConverter.m in Sources */,
+				BFE912EB2BA2FCE500590193 /* WCFormElement.m in Sources */,
+				BFE9126C2BA2F56D00590193 /* WCEncryptor.m in Sources */,
+				BFE9130E2BA2FD4200590193 /* WCBasicPaymentProducts.m in Sources */,
+				BFE9136B2BA2FE1C00590193 /* WCValidationErrorFixedList.m in Sources */,
+				BFE913292BA2FDA600590193 /* WCPreparedPaymentRequest.m in Sources */,
+				BFE912FE2BA2FD1300590193 /* WCPaymentProductFields.m in Sources */,
+				BFE913662BA2FE1C00590193 /* WCValidationErrorExpirationDate.m in Sources */,
+				BFE9130D2BA2FD4200590193 /* WCBasicPaymentProduct.m in Sources */,
+				BFE913582BA2FE1C00590193 /* WCValidationErrorAllowed.m in Sources */,
+				BFE9131C2BA2FD7100590193 /* WCBasicPaymentProductGroup.m in Sources */,
+				BFE912BF2BA2F75900590193 /* WCIINDetail.m in Sources */,
+				BFE912652BA2F4ED00590193 /* WCDirectoryEntriesConverter.m in Sources */,
+				BFE9124C2BA2F4ED00590193 /* WCBasicPaymentProductConverter.m in Sources */,
+				BFE913282BA2FDA600590193 /* WCPaymentRequest.m in Sources */,
+				BFE9128C2BA2F64800590193 /* WCUtil.m in Sources */,
+				BFE9136D2BA2FE1C00590193 /* WCValidationErrorEmailAddress.m in Sources */,
+				BFE912D22BA2F79600590193 /* WCPaymentItemDisplayHints.m in Sources */,
+				BFE912AD2BA2F70F00590193 /* WCAccountsOnFile.m in Sources */,
+				BFE9126D2BA2F56D00590193 /* WCJOSEEncryptor.m in Sources */,
+				BFE913AC2BA2FEA100590193 /* WCValueMappingItem.m in Sources */,
+				BFE9139A2BA2FE8500590193 /* WCValidatorResidentIdNumber.m in Sources */,
+				BFE913612BA2FE1C00590193 /* WCValidationErrorIBAN.m in Sources */,
+				BFE913A12BA2FE8500590193 /* WCValidators.m in Sources */,
+				BFE9125D2BA2F4ED00590193 /* WCBasicPaymentItemConverter.m in Sources */,
+				BFE913912BA2FE8500590193 /* WCValidatorRange.m in Sources */,
+				BFE912C22BA2F75900590193 /* WCIINDetailsResponse.m in Sources */,
+				BFE913742BA2FE1C00590193 /* WCValidationErrorNumericString.m in Sources */,
+				BFE912EF2BA2FCE500590193 /* WCDisplayElement.m in Sources */,
+				BFE9139F2BA2FE8500590193 /* WCValidatorIBAN.m in Sources */,
+				BFE9125F2BA2F4ED00590193 /* WCPaymentProductConverter.m in Sources */,
+				BFE912EE2BA2FCE500590193 /* WCToolTip.m in Sources */,
+				BFE912782BA2F5C400590193 /* WCNetworkingActivityConsoleLogger.m in Sources */,
+				BFE913602BA2FE1C00590193 /* WCValidationErrorInteger.m in Sources */,
+				BFE912A32BA2F6F700590193 /* WCLabelTemplateItem.m in Sources */,
+				BFE912982BA2F6C600590193 /* WCAccountOnFileAttribute.m in Sources */,
+				BFE913672BA2FE1C00590193 /* WCResidentIdNumberError.m in Sources */,
+				BFE913962BA2FE8500590193 /* WCValidatorTermsAndConditions.m in Sources */,
+				BFE9125C2BA2F4ED00590193 /* WCPaymentContextConverter.m in Sources */,
+				B4D77DCA1DE72F4E00F7B1C1 /* WCSession.m in Sources */,
+				BFE912562BA2F4ED00590193 /* WCDirectoryEntryConverter.m in Sources */,
+				BFE913572BA2FE1C00590193 /* WCValidationErrorRegularExpression.m in Sources */,
+				BFE912B52BA2F73300590193 /* WCDirectoryEntries.m in Sources */,
+				BFE913222BA2FD8E00590193 /* WCPaymentProductNetworks.m in Sources */,
+				BFE913A72BA2FE8500590193 /* WCValidatorFixedList.m in Sources */,
+				BFE9136E2BA2FE1C00590193 /* WCValidationErrorRange.m in Sources */,
+				BFE912EC2BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.m in Sources */,
+				BFE913192BA2FD7100590193 /* WCBasicPaymentProductGroups.m in Sources */,
+				BFE913002BA2FD1300590193 /* WCPaymentProductField.m in Sources */,
+				BFE913362BA2FDEC00590193 /* WCThirdPartyStatusResponse.m in Sources */,
+				BFE912A72BA2F6F700590193 /* WCLabelTemplate.m in Sources */,
+				BFE9122B2BA2F41700590193 /* WCBase64.m in Sources */,
+				BFE912592BA2F4ED00590193 /* WCDisplayElementsConverter.m in Sources */,
+				BFE9142F2BA3043D00590193 /* WCStubUtil.m in Sources */,
+				BFE912A42BA2F6F700590193 /* WCAccountOnFileDisplayHints.m in Sources */,
+				BFE912922BA2F66D00590193 /* WCNetworkingWrapper.m in Sources */,
+				BFE913982BA2FE8500590193 /* WCValidatorExpirationDate.m in Sources */,
+				BFE912DB2BA2FCA100590193 /* WCPaymentProduct320SpecificData.m in Sources */,
+				BFE9139C2BA2FE8500590193 /* WCValidatorLength.m in Sources */,
+				BFE9124B2BA2F4ED00590193 /* WCPaymentProductGroupsConverter.m in Sources */,
+				BFE9135C2BA2FE1C00590193 /* WCValidationErrorTermsAndConditions.m in Sources */,
+				BFE913A32BA2FE8500590193 /* WCValidatorBoletoBancarioRequiredness.m in Sources */,
+				BFE9125B2BA2F4ED00590193 /* WCIINDetailsResponseConverter.m in Sources */,
+				BFE912622BA2F4ED00590193 /* WCThirdPartyStatusResponseConverter.m in Sources */,
+				BFE913322BA2FDD000590193 /* WCPublicKeyResponse.m in Sources */,
+				BFE912582BA2F4ED00590193 /* WCPaymentProductGroupConverter.m in Sources */,
+				BFE912DE2BA2FCA100590193 /* WCPaymentProduct302SpecificData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D77C661DE72EB900F7B1C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE9141D2BA3041700590193 /* WCBasicPaymentProductConverterTestCase.m in Sources */,
+				BFE9141E2BA3041700590193 /* WCPaymentGroupConverterTestCase.m in Sources */,
+				BFE9141F2BA3041700590193 /* WCPaymentProductsConverterTestCase.m in Sources */,
+				BFE914202BA3041700590193 /* WCPaymentGroupsConverterTestCase.m in Sources */,
+				BFE914212BA3041700590193 /* WCBasicPaymentGroupConverterTestCase.m in Sources */,
+				BFE914222BA3041700590193 /* WCPaymentProductConverterTestCase.m in Sources */,
+				BFE914082BA303D200590193 /* WCValidatorFixedListTestCase.m in Sources */,
+				BFE914092BA303D200590193 /* WCValidatorLengthTestCase.m in Sources */,
+				BFE9140A2BA303D200590193 /* WCValidatorResidentIdNumberTestCase.m in Sources */,
+				BFE9141A2BA3040F00590193 /* WCC2SCommunicatorTestCase.m in Sources */,
+				BFE914262BA3042900590193 /* WCNetworkingWrapperTestCase.m in Sources */,
+				BFE9141B2BA3040F00590193 /* WCC2SCommunicatorConfigurationTestCase.m in Sources */,
+				BFE9140B2BA303D200590193 /* WCValidatorRangeTestCase.m in Sources */,
+				BFE914102BA303F300590193 /* WCPaymentRequestTestCase.m in Sources */,
+				BFE914192BA3040900590193 /* WCAccountOnFileAttributesTestCase.m in Sources */,
+				BFE914142BA303FC00590193 /* WCPaymentProductFieldsTestCase.m in Sources */,
+				BFE914152BA303FC00590193 /* WCPaymentProductFieldTestCase.m in Sources */,
+				BFE9140C2BA303D200590193 /* WCValidatorExpirationDateTestCase.m in Sources */,
+				BFE914232BA3041C00590193 /* WCEncryptorTestCase.m in Sources */,
+				BFE914242BA3041C00590193 /* WCJOSEEncryptorTestCase.m in Sources */,
+				BFE9140D2BA303D200590193 /* WCValidatorEmailAddressTestCase.m in Sources */,
+				BFE9140E2BA303D200590193 /* WCValidatorRegularExpressionTestCase.m in Sources */,
+				BFE9140F2BA303D200590193 /* WCValidatorLuhnTestCase.m in Sources */,
+				BFE914112BA303F800590193 /* WCBasicPaymentProductTestCase.m in Sources */,
+				BFE914252BA3042000590193 /* WCStringFormatterTestCase.m in Sources */,
+				BFE914182BA3040500590193 /* WCLabelTemplateTestCase.m in Sources */,
+				BFE914272BA3042F00590193 /* WCUtilTestCase.m in Sources */,
+				BFE914282BA3042F00590193 /* WCJSONTestCase.m in Sources */,
+				BFE914122BA303F800590193 /* WCPaymentProductTestCase.m in Sources */,
+				BFE914162BA3040100590193 /* WCAccountOnFileTestCase.m in Sources */,
+				BFE9141C2BA3041300590193 /* WCBase64TestCase.m in Sources */,
+				BFE914172BA3040100590193 /* WCAccountsOnFileTestCase.m in Sources */,
+				BFE914132BA303F800590193 /* WCPaymentProductsTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BE7C732295349C300657F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BE7C7222953499F00657F2F /* KeychainEntitlementTestApp */;
+			targetProxy = 7BE7C731295349C300657F2F /* PBXContainerItemProxy */;
+		};
+		B4D77C6D1DE72EB900F7B1C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D77C601DE72EB900F7B1C1 /* WorldlineConnectSDK */;
+			targetProxy = B4D77C6C1DE72EB900F7B1C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36881D492B6BA17B007A676B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = KeychainEntitlementTestApp;
+			};
+			name = Release;
+		};
+		7BE7C72E295349A100657F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				ICC_DYNAMIC_NO_PIC = "";
+				ICC_OPTIMIZATION_LEVEL = "";
+				ICC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = "";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.KeychainEntitlementTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4D77C731DE72EB900F7B1C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ICC_C_LANGUAGE_STANDARD = gnu99;
+				ICC_DYNAMIC_NO_PIC = NO;
+				ICC_NO_COMMON_BLOCKS = YES;
+				ICC_OPTIMIZATION_LEVEL = 0;
+				ICC_PREPROCESSOR_DEFINITIONS = "DEBUG=1 $(inherited)";
+				ICC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				ICC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				ICC_WARN_UNDECLARED_SELECTOR = YES;
+				ICC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				ICC_WARN_UNUSED_FUNCTION = YES;
+				ICC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4D77C741DE72EB900F7B1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ICC_C_LANGUAGE_STANDARD = gnu99;
+				ICC_NO_COMMON_BLOCKS = YES;
+				ICC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				ICC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				ICC_WARN_UNDECLARED_SELECTOR = YES;
+				ICC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				ICC_WARN_UNUSED_FUNCTION = YES;
+				ICC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4D77C761DE72EB900F7B1C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = WorldlineConnectSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.WorldlineConnectSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B4D77C771DE72EB900F7B1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = WorldlineConnectSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.WorldlineConnectSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B4D77C791DE72EB900F7B1C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WorldlineConnectSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.WorldlineConnectSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorldlineConnectSDKTests/WorldlineConnectSDKTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainEntitlementTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeychainEntitlementTestApp";
+			};
+			name = Debug;
+		};
+		B4D77C7A1DE72EB900F7B1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WorldlineConnectSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.WorldlineConnectSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WorldlineConnectSDKTests/WorldlineConnectSDKTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BE7C730295349A100657F2F /* Build configuration list for PBXNativeTarget "KeychainEntitlementTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE7C72E295349A100657F2F /* Debug */,
+				36881D492B6BA17B007A676B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B4D77C5B1DE72EB900F7B1C1 /* Build configuration list for PBXProject "WorldlineConnectSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D77C731DE72EB900F7B1C1 /* Debug */,
+				B4D77C741DE72EB900F7B1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D77C751DE72EB900F7B1C1 /* Build configuration list for PBXNativeTarget "WorldlineConnectSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D77C761DE72EB900F7B1C1 /* Debug */,
+				B4D77C771DE72EB900F7B1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D77C781DE72EB900F7B1C1 /* Build configuration list for PBXNativeTarget "WorldlineConnectSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D77C791DE72EB900F7B1C1 /* Debug */,
+				B4D77C7A1DE72EB900F7B1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4D77C581DE72EB900F7B1C1 /* Project object */;
+}
