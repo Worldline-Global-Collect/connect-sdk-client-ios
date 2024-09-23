@@ -131,7 +131,7 @@
     [self checkAvailabilityForPaymentProductWithId:paymentProductId context:context success:^{
         NSString *isRecurring = context.isRecurring == YES ? @"true" : @"false";
         NSString *forceBasicFlow = context.forceBasicFlow == YES ? @"true" : @"false";
-        NSString *URL = [NSString stringWithFormat:@"%@/%@/products/%@/?countryCode=%@&locale=%@&currencyCode=%@&amount=%lu&isRecurring=%@&forceBasicFlow=%@", [self baseURL], self.configuration.customerId, paymentProductId, context.countryCode, context.locale, context.amountOfMoney.currencyCode, (unsigned long)context.amountOfMoney.totalAmount, isRecurring, forceBasicFlow];
+        NSString *URL = [NSString stringWithFormat:@"%@/%@/products/%@?countryCode=%@&locale=%@&currencyCode=%@&amount=%lu&isRecurring=%@&forceBasicFlow=%@", [self baseURL], self.configuration.customerId, paymentProductId, context.countryCode, context.locale, context.amountOfMoney.currencyCode, (unsigned long)context.amountOfMoney.totalAmount, isRecurring, forceBasicFlow];
         [self getResponseForURL:URL success:^(id responseObject) {
             NSDictionary *rawPaymentProduct = (NSDictionary *)responseObject;
             WCPaymentProductConverter *converter = [[WCPaymentProductConverter alloc] init];
@@ -168,7 +168,7 @@
 - (NSError *)badRequestErrorForPaymentProductId:(NSString *)paymentProductId context:(WCPaymentContext *)context {
     
     NSString *isRecurring = context.isRecurring == YES ? @"true" : @"false";
-    NSString *URL = [NSString stringWithFormat:@"%@/%@/products/%@/?countryCode=%@&locale=%@&currencyCode=%@&amount=%lu&isRecurring=%@", [self baseURL], self.configuration.customerId, paymentProductId, context.countryCode, context.locale, context.amountOfMoney.currencyCode, (unsigned long)context.amountOfMoney.totalAmount, isRecurring];
+    NSString *URL = [NSString stringWithFormat:@"%@/%@/products/%@?countryCode=%@&locale=%@&currencyCode=%@&amount=%lu&isRecurring=%@", [self baseURL], self.configuration.customerId, paymentProductId, context.countryCode, context.locale, context.amountOfMoney.currencyCode, (unsigned long)context.amountOfMoney.totalAmount, isRecurring];
     NSDictionary *errorUserInfo = @{@"com.alamofire.serialization.response.error.response": [[NSHTTPURLResponse alloc] initWithURL:[NSURL fileURLWithPath:URL] statusCode:400 HTTPVersion:nil headerFields:@{@"Connection": @"close"}],
                                     @"NSErrorFailingURLKey": URL,
                                     @"com.alamofire.serialization.response.error.data": [NSData data],
@@ -179,7 +179,7 @@
 
 - (void)paymentProductGroupWithId:(NSString *)paymentProductGroupId context:(WCPaymentContext *)context success:(void (^)(WCPaymentProductGroup *paymentProductGroup))success failure:(void (^)(NSError *error))failure {
     NSString *isRecurring = context.isRecurring == YES ? @"true" : @"false";
-    NSString *URL = [NSString stringWithFormat:@"%@/%@/productgroups/%@/?countryCode=%@&locale=%@&currencyCode=%@&amount=%lu&isRecurring=%@", [self baseURL], self.configuration.customerId, paymentProductGroupId, context.countryCode, context.locale, context.amountOfMoney.currencyCode, (unsigned long)context.amountOfMoney.totalAmount, isRecurring];
+    NSString *URL = [NSString stringWithFormat:@"%@/%@/productgroups/%@?countryCode=%@&locale=%@&currencyCode=%@&amount=%lu&isRecurring=%@", [self baseURL], self.configuration.customerId, paymentProductGroupId, context.countryCode, context.locale, context.amountOfMoney.currencyCode, (unsigned long)context.amountOfMoney.totalAmount, isRecurring];
     [self getResponseForURL:URL success:^(id responseObject) {
         NSDictionary *rawPaymentProductGroup = (NSDictionary *)responseObject;
         WCPaymentProductGroupConverter *converter = [[WCPaymentProductGroupConverter alloc] init];

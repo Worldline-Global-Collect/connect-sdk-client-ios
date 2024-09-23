@@ -533,6 +533,7 @@
 "gc.general.paymentProducts.863.wrongPaymentMethod" = "Yukarıda belirtilen ödeme yöntemiyle ödeme yapamıyorsanız lütfen ‘İptal’ düğmesine tıklayın ve başka bir ödeme ürününü seçerek ödemenizi tamamlayın.";
 "gc.general.paymentProducts.864.name" = "Alipay";
 "gc.general.paymentProducts.865.name" = "Bankanızla ödeyin";
+"gc.general.paymentProducts.866.name" = "AliPay+";
 "gc.general.paymentProducts.869.name" = "China UnionPay";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.label" = "İkamet edenin adı ";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.placeholder" = "İkamet edenin adı ";

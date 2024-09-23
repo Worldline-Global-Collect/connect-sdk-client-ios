@@ -533,6 +533,7 @@
 "gc.general.paymentProducts.863.wrongPaymentMethod" = "Si no puede pagar con el método anterior, toque la opción 'Cancel' y seleccione otro producto de pago para completar la transacción.";
 "gc.general.paymentProducts.864.name" = "Alipay";
 "gc.general.paymentProducts.865.name" = "Pague con su banco";
+"gc.general.paymentProducts.866.name" = "AliPay+";
 "gc.general.paymentProducts.869.name" = "China UnionPay";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.label" = "Nombre del Residente ";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.placeholder" = "Nombre del Residente ";

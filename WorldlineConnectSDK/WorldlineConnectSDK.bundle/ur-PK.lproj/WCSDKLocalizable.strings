@@ -533,6 +533,7 @@
 "gc.general.paymentProducts.863.wrongPaymentMethod" = "جب آپ مندرجہ بالا ادائیگی کا طریقہ استعمال کرتے ہوئے ادائیگی کرنے سے قاصر ہوں، تو براہِ کرم 'Cancel' پر انگلی سے ضرب لگائیں اور اپنی رقم کی ادائیگی مکمل کرنے کے لیے کوئی اور ادائیگی والی پراڈکٹ منتخب کریں۔";
 "gc.general.paymentProducts.864.name" = "Alipay";
 "gc.general.paymentProducts.865.name" = "اپنے بینک سے ادا کریں";
+"gc.general.paymentProducts.866.name" = "AliPay+";
 "gc.general.paymentProducts.869.name" = "China UnionPay";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.label" = "مکین کا نام ";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.placeholder" = "مکین کا نام ";

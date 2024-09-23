@@ -533,6 +533,7 @@
 "gc.general.paymentProducts.863.wrongPaymentMethod" = "Ha a fenti fizetési móddal nem tud fizetni, koppintson a „Mégse” elemre, és válasszon másik fizetőterméket a fizetés végrehajtásához.";
 "gc.general.paymentProducts.864.name" = "Alipay";
 "gc.general.paymentProducts.865.name" = "Fizessen a bankján keresztül";
+"gc.general.paymentProducts.866.name" = "AliPay+";
 "gc.general.paymentProducts.869.name" = "China UnionPay";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.label" = "Lakos neve ";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.placeholder" = "Lakos neve ";

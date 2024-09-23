@@ -533,6 +533,7 @@
 "gc.general.paymentProducts.863.wrongPaymentMethod" = "Jos maksaminen edellä olevalla tavalla ei onnistu, napauta \"peruuta\" ja valitse jokin toinen maksutuote maksun suorittamiseksi.";
 "gc.general.paymentProducts.864.name" = "Alipay";
 "gc.general.paymentProducts.865.name" = "Maksa pankkisi kautta";
+"gc.general.paymentProducts.866.name" = "AliPay+";
 "gc.general.paymentProducts.869.name" = "China UnionPay";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.label" = "Nimi henkilökortissa ";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.placeholder" = "Nimi henkilökortissa ";

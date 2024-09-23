@@ -533,6 +533,7 @@
 "gc.general.paymentProducts.863.wrongPaymentMethod" = "Ja nevarat veikt maksājumu, izmantojot augstāk minēto maksāšanas metodi, klikšķiniet uz „Atcelt” un maksājuma veikšanai izvēlieties citu maksāšanas produktu.";
 "gc.general.paymentProducts.864.name" = "Alipay";
 "gc.general.paymentProducts.865.name" = "Maksājiet, izmantojot savu banku";
+"gc.general.paymentProducts.866.name" = "AliPay+";
 "gc.general.paymentProducts.869.name" = "China UnionPay";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.label" = "Rezidenta vārds ";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.placeholder" = "Rezidenta vārds ";

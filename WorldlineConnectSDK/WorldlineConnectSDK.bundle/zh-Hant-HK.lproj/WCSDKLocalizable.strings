@@ -533,6 +533,7 @@
 "gc.general.paymentProducts.863.wrongPaymentMethod" = "如果您無法使用上述方式付款，請按下「取消」，然後選擇其他付款方式以完成付款。";
 "gc.general.paymentProducts.864.name" = "Alipay";
 "gc.general.paymentProducts.865.name" = "銀行支付";
+"gc.general.paymentProducts.866.name" = "AliPay+";
 "gc.general.paymentProducts.869.name" = "中國銀聯";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.label" = "居民姓名 ";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.placeholder" = "居民姓名 ";

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,14 @@
 		B4D77C721DE72EB900F7B1C1 /* WorldlineConnectSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D77C641DE72EB900F7B1C1 /* WorldlineConnectSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4D77DC91DE72F4E00F7B1C1 /* WCSession.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D77DBF1DE72F4E00F7B1C1 /* WCSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4D77DCA1DE72F4E00F7B1C1 /* WCSession.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D77DC01DE72F4E00F7B1C1 /* WCSession.m */; };
+		BFA9A6C92BFE2C8E003603CD /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = BFA9A6C82BFE2C8E003603CD /* OHHTTPStubs */; };
 		BFAD7DA72BA3491D00A48165 /* certificate.pfx in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA12BA3491D00A48165 /* certificate.pfx */; };
 		BFAD7DA82BA3491D00A48165 /* paymentProduct.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA22BA3491D00A48165 /* paymentProduct.json */; };
 		BFAD7DA92BA3491D00A48165 /* paymentProductGroups.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA32BA3491D00A48165 /* paymentProductGroups.json */; };
 		BFAD7DAA2BA3491D00A48165 /* paymentProductGroup.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA42BA3491D00A48165 /* paymentProductGroup.json */; };
 		BFAD7DAB2BA3491D00A48165 /* paymentProductMissingFields.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA52BA3491D00A48165 /* paymentProductMissingFields.json */; };
 		BFAD7DAC2BA3491D00A48165 /* paymentProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7DA62BA3491D00A48165 /* paymentProducts.json */; };
+		BFCC69502C9AC6F600D02540 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = BFCC694F2C9AC6F600D02540 /* PrivacyInfo.xcprivacy */; };
 		BFE912252BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912212BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE912262BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912222BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.m */; };
 		BFE912272BA2F3FF00590193 /* WCC2SCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912232BA2F3FF00590193 /* WCC2SCommunicator.m */; };
@@ -287,6 +289,7 @@
 		BFAD7DA42BA3491D00A48165 /* paymentProductGroup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = paymentProductGroup.json; path = WorldlineConnectSDKTests/Resources/paymentProductGroup.json; sourceTree = "<group>"; };
 		BFAD7DA52BA3491D00A48165 /* paymentProductMissingFields.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = paymentProductMissingFields.json; path = WorldlineConnectSDKTests/Resources/paymentProductMissingFields.json; sourceTree = "<group>"; };
 		BFAD7DA62BA3491D00A48165 /* paymentProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = paymentProducts.json; path = WorldlineConnectSDKTests/Resources/paymentProducts.json; sourceTree = "<group>"; };
+		BFCC694F2C9AC6F600D02540 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		BFE912212BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCC2SCommunicatorConfiguration.h; path = "API communication/WCC2SCommunicatorConfiguration.h"; sourceTree = "<group>"; };
 		BFE912222BA2F3FF00590193 /* WCC2SCommunicatorConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCC2SCommunicatorConfiguration.m; path = "API communication/WCC2SCommunicatorConfiguration.m"; sourceTree = "<group>"; };
 		BFE912232BA2F3FF00590193 /* WCC2SCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCC2SCommunicator.m; path = "API communication/WCC2SCommunicator.m"; sourceTree = "<group>"; };
@@ -528,6 +531,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA9A6C92BFE2C8E003603CD /* OHHTTPStubs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +673,7 @@
 				B4D77DD61DE72FBE00F7B1C1 /* Cryptography */,
 				B4D77DD71DE72FC600F7B1C1 /* Formatters */,
 				B4D77C651DE72EB900F7B1C1 /* Info.plist */,
+				BFCC694F2C9AC6F600D02540 /* PrivacyInfo.xcprivacy */,
 				B4D77E401DE730EC00F7B1C1 /* Models */,
 				B9E71D49241FDB7500EFCFEB /* NetworkingLogger */,
 				B4D77DDD1DE72FF300F7B1C1 /* Protocols */,
@@ -1364,6 +1369,9 @@
 			dependencies = (
 			);
 			name = WorldlineConnectSDK;
+			packageProductDependencies = (
+				BFA9A6C82BFE2C8E003603CD /* OHHTTPStubs */,
+			);
 			productName = WorldlineConnectSDK;
 			productReference = B4D77C611DE72EB900F7B1C1 /* WorldlineConnectSDK.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1422,6 +1430,9 @@
 				en,
 			);
 			mainGroup = B4D77C571DE72EB900F7B1C1;
+			packageReferences = (
+				BFA9A6C72BFE2C8E003603CD /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
+			);
 			productRefGroup = B4D77C621DE72EB900F7B1C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1438,6 +1449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCC69502C9AC6F600D02540 /* PrivacyInfo.xcprivacy in Resources */,
 				F5353A931E1F978C002A323E /* WorldlineConnectSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1679,7 +1691,10 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = "";
 				MTL_FAST_MATH = YES;
@@ -1779,7 +1794,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1801,7 +1817,11 @@
 				INFOPLIST_FILE = WorldlineConnectSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.WorldlineConnectSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1823,7 +1843,11 @@
 				INFOPLIST_FILE = WorldlineConnectSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.WorldlineConnectSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1837,7 +1861,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WorldlineConnectSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.WorldlineConnectSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WorldlineConnectSDKTests/WorldlineConnectSDKTests-Bridging-Header.h";
@@ -1852,7 +1880,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WorldlineConnectSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.worldline.connect.WorldlineConnectSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WorldlineConnectSDKTests/WorldlineConnectSDKTests-Bridging-Header.h";
@@ -1900,6 +1932,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFA9A6C72BFE2C8E003603CD /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFA9A6C82BFE2C8E003603CD /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFA9A6C72BFE2C8E003603CD /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4D77C581DE72EB900F7B1C1 /* Project object */;
 }

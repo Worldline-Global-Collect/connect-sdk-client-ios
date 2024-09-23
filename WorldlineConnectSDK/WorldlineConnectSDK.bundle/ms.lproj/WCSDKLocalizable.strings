@@ -533,6 +533,7 @@
 "gc.general.paymentProducts.863.wrongPaymentMethod" = "Apabila anda tidak boleh membayar menggunakan kaedah pembayaran di atas, sila ketik ‘Batal’ dan pilih produk pembayaran yang lain untuk melengkapkan pembayaran anda.";
 "gc.general.paymentProducts.864.name" = "Alipay";
 "gc.general.paymentProducts.865.name" = "Bayar dengan bank anda";
+"gc.general.paymentProducts.866.name" = "AliPay+";
 "gc.general.paymentProducts.869.name" = "China UnionPay";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.label" = "Nama penduduk ";
 "gc.general.paymentProducts.869.paymentProductFields.residentIdName.placeholder" = "Nama penduduk ";
