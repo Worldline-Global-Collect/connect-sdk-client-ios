@@ -6,8 +6,8 @@
 //  Copyright © 2017 Worldline Global Collect. All rights reserved.
 //
 
-#ifndef WorldlineConnectSDK_WCSDKConstants_h
-#define WorldlineConnectSDK_WCSDKConstants_h
+#ifndef WCSDKConstants_h
+#define WCSDKConstants_h
 #import  "WCSession.h"
 
 //Keys

@@ -34,6 +34,8 @@
     rawPaymentProductContext[@"isRecurring"] = isRecurring;
     rawPaymentProductContext[@"countryCode"] = paymentProductContext.countryCode;
     rawPaymentProductContext[@"amountOfMoney"] = [self JSONFromAmountOfMoney:paymentProductContext.amountOfMoney];
+    NSString *isInstallments = paymentProductContext.isInstallments == YES ? @"true" : @"false";
+    rawPaymentProductContext[@"isInstallments"] = isInstallments;
     return [NSDictionary dictionaryWithDictionary:rawPaymentProductContext];
 }
 

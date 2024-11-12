@@ -7,8 +7,8 @@
 //
 //
 
-#ifndef WorldlineConnectSDK_WCTHIRDPARTYSTATUS_h
-#define WorldlineConnectSDK_WCTHIRDPARTYSTATUS_h
+#ifndef WCThirdPartyStatus_h
+#define WCThirdPartyStatus_h
 typedef enum {
     WCThirdPartyStatusWaiting,
     WCThirdPartyStatusInitialized,

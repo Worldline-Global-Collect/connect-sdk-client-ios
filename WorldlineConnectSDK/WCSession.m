@@ -281,6 +281,11 @@
     }];
 }
 
+- (void)publicKey:(void (^)(WCPublicKeyResponse *publicKeyResponse))success failure:(void (^)(NSError *error))failure
+{
+    [self.communicator publicKey:success failure:failure];
+}
+
 - (NSString *)clientSessionId
 {
     return [self.communicator clientSessionId];

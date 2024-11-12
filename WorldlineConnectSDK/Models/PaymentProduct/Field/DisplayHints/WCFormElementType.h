@@ -6,8 +6,8 @@
 //  Copyright © 2017 Worldline Global Collect. All rights reserved.
 //
 
-#ifndef WorldlineConnectSDK_WCFormElementType_h
-#define WorldlineConnectSDK_WCFormElementType_h
+#ifndef WCFormElementType_h
+#define WCFormElementType_h
 
 typedef enum {
     WCTextType,

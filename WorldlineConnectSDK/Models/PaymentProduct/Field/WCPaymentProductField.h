@@ -10,7 +10,7 @@
 
 #import  "WCPaymentProductFieldDisplayHints.h"
 #import  "WCDataRestrictions.h"
-#import  "WCType.h"
+#import  "WCFieldType.h"
 
 @class WCPaymentRequest;
 
@@ -20,7 +20,7 @@
 @property (strong, nonatomic) WCPaymentProductFieldDisplayHints *displayHints;
 @property (strong, nonatomic) NSString *identifier;
 @property (assign, nonatomic) BOOL usedForLookup;
-@property (nonatomic) WCType type;
+@property (nonatomic) WCFieldType type;
 @property (strong, nonatomic) NSMutableArray *errors;
 
 - (void)validateValue:(NSString *)value forPaymentRequest:(WCPaymentRequest *)request;

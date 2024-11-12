@@ -126,7 +126,7 @@
 		BFE912F22BA2FCE500590193 /* WCPreferredInputType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912E72BA2FCE500590193 /* WCPreferredInputType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE912F32BA2FCE500590193 /* WCDisplayElementType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912E82BA2FCE500590193 /* WCDisplayElementType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE912F42BA2FCE500590193 /* WCFormElementType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912E92BA2FCE500590193 /* WCFormElementType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFE912FC2BA2FD1300590193 /* WCType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912F52BA2FD1300590193 /* WCType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE912FC2BA2FD1300590193 /* WCFieldType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912F52BA2FD1300590193 /* WCFieldType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE912FD2BA2FD1300590193 /* WCPaymentProductFields.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912F62BA2FD1300590193 /* WCPaymentProductFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE912FE2BA2FD1300590193 /* WCPaymentProductFields.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE912F72BA2FD1300590193 /* WCPaymentProductFields.m */; };
 		BFE912FF2BA2FD1300590193 /* WCPaymentProductField.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE912F82BA2FD1300590193 /* WCPaymentProductField.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -396,7 +396,7 @@
 		BFE912E72BA2FCE500590193 /* WCPreferredInputType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPreferredInputType.h; path = Models/PaymentProduct/Field/DisplayHints/WCPreferredInputType.h; sourceTree = "<group>"; };
 		BFE912E82BA2FCE500590193 /* WCDisplayElementType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCDisplayElementType.h; path = Models/PaymentProduct/Field/DisplayHints/WCDisplayElementType.h; sourceTree = "<group>"; };
 		BFE912E92BA2FCE500590193 /* WCFormElementType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFormElementType.h; path = Models/PaymentProduct/Field/DisplayHints/WCFormElementType.h; sourceTree = "<group>"; };
-		BFE912F52BA2FD1300590193 /* WCType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCType.h; path = Models/PaymentProduct/Field/WCType.h; sourceTree = "<group>"; };
+		BFE912F52BA2FD1300590193 /* WCFieldType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCFieldType.h; path = Models/PaymentProduct/Field/WCFieldType.h; sourceTree = "<group>"; };
 		BFE912F62BA2FD1300590193 /* WCPaymentProductFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductFields.h; path = Models/PaymentProduct/Field/WCPaymentProductFields.h; sourceTree = "<group>"; };
 		BFE912F72BA2FD1300590193 /* WCPaymentProductFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCPaymentProductFields.m; path = Models/PaymentProduct/Field/WCPaymentProductFields.m; sourceTree = "<group>"; };
 		BFE912F82BA2FD1300590193 /* WCPaymentProductField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCPaymentProductField.h; path = Models/PaymentProduct/Field/WCPaymentProductField.h; sourceTree = "<group>"; };
@@ -1068,7 +1068,7 @@
 				BFE912F92BA2FD1300590193 /* WCPaymentProductField.m */,
 				BFE912F62BA2FD1300590193 /* WCPaymentProductFields.h */,
 				BFE912F72BA2FD1300590193 /* WCPaymentProductFields.m */,
-				BFE912F52BA2FD1300590193 /* WCType.h */,
+				BFE912F52BA2FD1300590193 /* WCFieldType.h */,
 			);
 			name = Field;
 			sourceTree = "<group>";
@@ -1286,7 +1286,7 @@
 				BFE9135B2BA2FE1C00590193 /* WCValidationErrorNumericString.h in Headers */,
 				BFE912DA2BA2FCA100590193 /* WCPaymentProduct320SpecificData.h in Headers */,
 				BFE9130C2BA2FD4200590193 /* WCBasicPaymentProduct.h in Headers */,
-				BFE912FC2BA2FD1300590193 /* WCType.h in Headers */,
+				BFE912FC2BA2FD1300590193 /* WCFieldType.h in Headers */,
 				BFE912882BA2F64800590193 /* WCJSON.h in Headers */,
 				BFE912F22BA2FCE500590193 /* WCPreferredInputType.h in Headers */,
 				BFE912ED2BA2FCE500590193 /* WCPaymentProductFieldDisplayHints.h in Headers */,

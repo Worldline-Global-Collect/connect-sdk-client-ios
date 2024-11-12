@@ -6,8 +6,8 @@
 //  Copyright © 2017 Worldline Global Collect. All rights reserved.
 //
 
-#ifndef WorldlineConnectSDK_WCAccountOnFileAttributeStatus_h
-#define WorldlineConnectSDK_WCAccountOnFileAttributeStatus_h
+#ifndef WCAccountOnFileAttributeStatus_h
+#define WCAccountOnFileAttributeStatus_h
 
 typedef enum {
     WCReadOnly,

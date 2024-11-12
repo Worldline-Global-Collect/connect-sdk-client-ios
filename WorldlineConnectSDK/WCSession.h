@@ -40,6 +40,7 @@
 - (void)convertAmount:(long)amountInCents withSource:(NSString *)source target:(NSString *)target success:(void (^)(long convertedAmountInCents))success failure:(void (^)(NSError *error))failure;
 - (void)directoryForPaymentProductId:(NSString *)paymentProductId countryCode:(NSString *)countryCode currencyCode:(NSString *)currencyCode success:(void (^)(WCDirectoryEntries *directoryEntries))success failure:(void (^)(NSError *error))failure;
 - (void)preparePaymentRequest:(WCPaymentRequest *)paymentRequest success:(void (^)(WCPreparedPaymentRequest *preparedPaymentRequest))success failure:(void (^)(NSError *error))failure;
+- (void)publicKey:(void (^)(WCPublicKeyResponse *publicKeyResponse))success failure:(void (^)(NSError *error))failure;
 - (void)paymentProductNetworksForProductId:(NSString *)paymentProductId context:(WCPaymentContext *)context success:(void (^)(WCPaymentProductNetworks *paymentProductNetworks))success failure:(void (^)(NSError *error))failure;
 - (void)thirdPartyStatusForPayment:(NSString *)paymentId success:(void(^)(WCThirdPartyStatusResponse *thirdPartyStatusResponse))success failure:(void(^)(NSError *error))failure;
 - (BOOL)loggingEnabled;

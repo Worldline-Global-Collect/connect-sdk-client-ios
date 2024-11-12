@@ -6,8 +6,8 @@
 //  Copyright © 2017 Worldline Global Collect. All rights reserved.
 //
 
-#ifndef WorldlineConnectSDK_WCIINStatus_h
-#define WorldlineConnectSDK_WCIINStatus_h
+#ifndef WCIINStatus_h
+#define WCIINStatus_h
 
 typedef enum {
     WCSupported,

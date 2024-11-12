@@ -6,8 +6,8 @@
 //  Copyright © 2017 Worldline Global Collect. All rights reserved.
 //
 
-#ifndef WorldlineConnectSDK_WCPreferredInputType_h
-#define WorldlineConnectSDK_WCPreferredInputType_h
+#ifndef WCPreferredInputType_h
+#define WCPreferredInputType_h
 
 typedef enum {
     WCStringKeyboard,
