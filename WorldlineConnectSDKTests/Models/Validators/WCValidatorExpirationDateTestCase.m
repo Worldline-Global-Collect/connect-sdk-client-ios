@@ -382,65 +382,54 @@
 
 - (void)testValidateWithVariousScenarios
 {
-    // 1. 测试有效日期（当前日期之后，25年之内）
-    // Test valid date (between current date and 25 years in the future)
+    // 1. Test valid date (between current date and 25 years in the future)
     [self.validator validate:@"1226" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count == 0, @"Valid future date should pass validation");
     
-    // 2. 测试无效的日期格式
-    // Test invalid date format
+    // 2. Test invalid date format
     [self.validator validate:@"13" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Invalid date format should fail validation");
     
-    // 3. 测试无效的月份
-    // Test invalid months
+    // 3. Test invalid months
     [self.validator validate:@"0026" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Invalid month (00) should fail validation");
     
     [self.validator validate:@"1326" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Invalid month (13) should fail validation");
     
-    // 4. 测试过期日期
-    // Test expired date
+    // 4. Test expired date
     [self.validator validate:@"0324" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Expired date should fail validation");
     
-    // 5. 测试超出25年限制的日期
-    // Test date beyond 25 years limit
+    // 5. Test date beyond 25 years limit
     [self.validator validate:@"1250" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Date beyond 25 years should fail validation");
     
-    // 6. 测试非数字输入
-    // Test non-numeric input
+    // 6. Test non-numeric input
     [self.validator validate:@"12ab" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Non-numeric input should fail validation");
     
-    // 7. 测试空输入
-    // Test empty input
+    // 7. Test empty input
     [self.validator validate:@"" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Empty input should fail validation");
     
-    // 8. 测试nil输入
-    // Test nil input
+    // 8. Test nil input
     [self.validator validate:nil forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Nil input should fail validation");
     
-    // 9. 测试当前月份和年份
-    // Test current month and year
+    // 9. Test current month and year
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setCalendar:gregorianCalendar];
     [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
     [formatter setDateFormat:@"MMyy"];
     
-    // 使用setUp中设置的now
     // Use the now date set in setUp
     NSString *currentDate = [formatter stringFromDate:self.now];
     [self.validator validate:currentDate forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count == 0, @"Current month and year should pass validation");
     
-    // 10. 测试下个月
-    // Test next month
+    // 10. Test next month
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.month = 1;
     NSDate *nextMonth = [gregorianCalendar dateByAddingComponents:components toDate:self.now options:0];
@@ -451,8 +440,7 @@
 
 - (void)testValidateWithCenturyTransition
 {
-    // 1. 测试世纪转换（当前是2025年）
-    // Test century transition (current year is 2025)
+    // 1. Test century transition (current year is 2025)
     [self.validator validate:@"1224" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Date in past century should fail validation");
     
@@ -462,37 +450,32 @@
     [self.validator validate:@"1226" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count == 0, @"Date in current century should pass validation");
     
-    // 2. 测试世纪边界
-    // Test century boundaries
+    // 2. Test century boundaries
     [self.validator validate:@"1299" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Date beyond century should fail validation");
 }
 
 - (void)testValidateWithEdgeCases
 {
-    // 1. 测试月份边界
-    // Test month boundaries
+    // 1. Test month boundaries
     [self.validator validate:@"0126" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count == 0, @"First month should pass validation");
     
     [self.validator validate:@"1226" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count == 0, @"Last month should pass validation");
     
-    // 2. 测试年份边界
-    // Test year boundaries
+    // 2. Test year boundaries
     [self.validator validate:@"1200" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Year 00 should fail validation");
     
     [self.validator validate:@"1299" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Year 99 should fail validation");
     
-    // 3. 测试特殊字符
-    // Test special characters
+    // 3. Test special characters
     [self.validator validate:@"12-24" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Date with special characters should fail validation");
     
-    // 4. 测试空格
-    // Test whitespace
+    // 4. Test whitespace
     [self.validator validate:@"12 24" forPaymentRequest:nil];
     XCTAssertTrue(self.validator.errors.count > 0, @"Date with spaces should fail validation");
 }

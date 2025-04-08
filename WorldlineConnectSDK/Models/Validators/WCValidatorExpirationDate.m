@@ -49,20 +49,20 @@
 {
     [super validate:value forPaymentRequest:request];
     
-    // 验证输入格式
+    // Validate input format
     if (value == nil || value.length != 4) {
         [self.errors addObject:[[WCValidationErrorExpirationDate alloc] init]];
         return;
     }
     
-    // 验证输入是否为纯数字
+    // Validate input contains only digits
     NSCharacterSet *nonDigits = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
     if ([value rangeOfCharacterFromSet:nonDigits].location != NSNotFound) {
         [self.errors addObject:[[WCValidationErrorExpirationDate alloc] init]];
         return;
     }
     
-    // 验证月份
+    // Validate month
     NSString *monthString = [value substringWithRange:NSMakeRange(0, 2)];
     NSInteger month = [monthString integerValue];
     if (month < 1 || month > 12) {
@@ -76,7 +76,7 @@
         return;
     }
     
-    // 使用传入的now参数
+    // Use the passed now parameter
     NSDate *now = [self.gregorianCalendar dateFromComponents:[self.gregorianCalendar components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:[NSDate date]]];
     NSDate *futureDate = [self.gregorianCalendar dateByAddingUnit:NSCalendarUnitYear value:25 toDate:now options:0];
     
